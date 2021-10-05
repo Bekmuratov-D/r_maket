@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+body{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+}
+.px12{
+    font-size: 12px;
+}
+.px20{
+    font-size: 20px;
+}
+ul#headermenu li{
+    display: inline-block;/*Расположит пункты горизантално*/
+    text-align: right;/*текст горизонтально с правой краю*/
+}
+#headermenu#headermenu li{
+    margin: 0;/*убрат внутренные отступы*/
+    padding: 0;/*убат внешные отступы*/
+}
+#headermenu a{
+    color: #17494D;
+    text-decoration: none;  
+    padding: 5px 5px;  
+}
+ul#headermenu2 li{
+    display: inline-block;/*Расположит пункты горизантално*/
+    text-align: justify;/*текст горизонтально с правой краю*/
+}
+#headermenu2#headermenu2 li{
+    margin: 0;/*убрат внутренные отступы*/
+    padding: 0;/*убат внешные отступы*/
+}
+#headermenu2 a{
+    color: #17494D;
+    text-decoration: none;  
+    padding: 5px 20px
+}
+.button1 {background-color: #17494D;}
+.colorbuuton1{color:#FFFFFF;}
+#section1{background-color: #17494D;}
