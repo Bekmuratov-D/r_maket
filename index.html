@@ -6,47 +6,83 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <header>
-        <div class="mimiheader">
-             <ul id="headermenu">
-                 <li><a class="px12" href="URL">Sign in</a></li>
-                <li><a class="px12" href="URL">Product Support</a></li>
-                <li><a class="px12" href="URL">Company</a></li>
-                <li><a class="px12" href="URL">Contact us</a></li>
-                <li><a class="px12" href="URL">English</a></li>
+    <header class="header">
+        <div class="header__wrapper">
+             <ul class="header_functions functions">
+                <li class="functions__item">
+                    <a class="functions__item" href="#">Sign in</a>
+                </li>
+                <li class="functions__item">
+                    <a class="functions__link" href="#">Product Support</a>
+                </li>
+                <li class="functions__item">
+                    <a class="functions__item" href="#">Company</a>
+                </li>
+                <li class="functions__item">
+                    <a class="functions__item" href="#">Contact us</a>
+                </li>
+                <li class="functions__item">
+                    <a class="functions__item" href="#">English</a>
+                </li>
             </ul>
         </div>
-        <div>
-            <nav>
-            <ul id="headermenu2">
-                <Li><img src="img/Group.png"></Li>
-                <li><a class="" href="URL">products</a></li>
-                <li><a class="" href="URL">Pricing</a></li>
-                <li><a class="" href="URL">Solitions</a></li>
-                <li><a class="" href="URL">Demo</a></li>
-                <li><a class="" href="URL">Servises</a></li>
-                <li><a class="" href="URL">Resurse</a></li>
-                <button class="button1">
-                    <a class="colorbuuton1" href="URL">Get startet</a>
-                </button>
-            </ul>
+        <div class="header_menu">
+            <a class="header_logo logo" href="#">
+                <img class="logo_img" src="img/Group.png" alt="Zendesk">
+            </a>
+            <nav class="header_navigation navigation">
+                <ul id="navigation__list">
+                    <li class="navigation__item">
+                        <a class="navigation__link" href="URL">products</a>
+                    </li>
+                    <liclass="navigation__item">
+                        <a class="navigation__link" href="URL">Pricing</a>
+                    </li>
+                    <li class="navigation__item">
+                        <a class="navigation__link" href="URL">Solitions</a>
+                    </li>
+                    <li class="navigation__item">
+                        <a class="navigation__link" href="URL">Demo</a>
+                    </li>
+                    <li class="navigation__item">
+                        <a class="navigation__link" href="URL">Servises</a>
+                    </li>
+                    <li class="navigation__item">
+                        <a class="navigation__link" href="URL">Resurse</a>
+                    </li>
+                    <li class="navigation__item">
+                        <a class="navigation__link navigation__link--bg_green" href="URL">Get startet</a>
+                    </li>
+                </ul>
             </nav>
         </div>
     </header>
-    <section id=section1>
-        <div>
-            <h1><span>Champions</span> <span>of</span> <span>customer</span> <span>service</span></h1>
-        </div>
-        <div>
-            <p class="px20">Zendesk makes customer service better. We build software to meet customer needs, set your team up for success, and keep your business in sync.</p>
-            <button><a href="URL">Free trial</a></button>
-            <button><a href="URL">View Demo</a></button>
+    <main>
+        <h1 class="visually-hidden">Something about this page</h1>
+    <section class="promo">
+        <div class="promo__wrapper">
+            <h2 class="visually-hidden">About our company</h2>
+            <p class="promo__slogan">
+                <span class="pink-text">chanpions</span>
+                of
+                <span class="pink-text white-underline">customer</span>
+                <span class="pink-text white-underline">service</span>
+            </p>
+            <div class="promo__content-wrapper">
+                <p class="promo__text">Zendesk makes customer service better. We build software to meet customer needs, set your team up for success, and keep your business in sync.</p>
+                <div class="promo__links-wrapper">
+                    <a href="#" class="promo__link">Free trial</a>
+                    <a href="#" class="promo__link promo__link--outline">View Demo</a>
+                </div>    
+            </div>
         </div>
     </section> 
-    <section>  
+    <section class="">  
         <div>
             <div>
-                 <img src="img/image 3.svg" alt="Смайлик" > <img src="img/image 1.svg" alt="фото"> <img src="img/image 2.png" alt="фото">
+                <img src="img/image 3.svg" alt="Смайлик"> 
+                <img src="img/image 1.svg" alt="фото"> 
+                <img src="img/image 2.png" alt="фото">
             </div>
             <div>
                 <p>Go all in on messaging</p>
@@ -262,5 +298,6 @@
             </div>
         </div>
     </section>
+    </main>
 </body>
 </html>
