@@ -6,16 +6,48 @@ body{
     font-size: 16px;
     line-height: 24px;
 }
-.px12{
-    font-size: 12px;
+.bigcontainer{
+    max-width: 1121px;
+    margin: 0 auto;
+ }
+
+.navbar {
+    width: 100%;
+    width: 70px;  
 }
-.px20{
-    font-size: 20px;
+.navbar__container{
+    height: inherit;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
-ul#headermenu li{
-    display: inline-block;/*Расположит пункты горизантално*/
-    text-align: right;/*текст горизонтально с правой краю*/
+
+.navigation__list {
+    list-style-type: none;
+    padding-left: 0;
+    margin-bottom: 0;
+
 }
+
+.navigation__item {
+  display: inline-block;
+}
+
+.navigation__link {
+    display: inline-block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 #headermenu#headermenu li{
     margin: 0;/*убрат внутренные отступы*/
     padding: 0;/*убат внешные отступы*/
