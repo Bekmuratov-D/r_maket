@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <title>Document</title>  
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/normalize.css">
 </head>
 <body>
-    <div class="bigcontainer">
+    <div class="bodycontainer">
         <header class="header">
             <div class="header__wrapper">
                 <ul class="header__functions functions">
@@ -31,7 +32,7 @@
                 <nav class="header-menu__navbar navbar">
                     <div class="navbar__container">
                         <a class="header__logo logo" href="#">
-                            <img class="logo_img" src="img/Group.png" alt="Zendesk">
+                            <img class="logo__img" src="img/Group.png" alt="Zendesk">
                         </a>
                         <div class="navbar__navigation navigation">
                             <ul class="navigation__list">
@@ -67,15 +68,15 @@
                     <h2 class="visually-hidden">About our company</h2>
                     <p class="promo__slogan">
                         <span class="pink-text">chanpions</span>
-                        of
-                        <span class="pink-text white-underline">customer</span>
-                        <span class="pink-text white-underline">service</span>
+                        <span class="pink-text__white-underline1">of</span>
+                        <span class="pink-text__white-underline2">customer</span>
+                        <span class="pink-text__white-underline3">service</span>
                     </p>
                     <div class="promo__content-wrapper">
                         <p class="promo__text">Zendesk makes customer service better. We build software to meet customer needs, set your team up for success, and keep your business in sync.</p>
                         <div class="promo__links-wrapper">
-                            <a href="#" class="promo__link promo__link--line">Free trial</a>
-                            <a href="#" class="promo__link promo__link--outline">View Demo</a>
+                            <a href="#" class="promo__link-line">Free trial</a>
+                            <a href="#" class="promo__link-outline">View Demo</a>
                         </div>    
                     </div>
                 </div>
@@ -87,11 +88,11 @@
                     <img  src="img/image 2.png" alt="" class="how-use__img">
                 </div>
                 <div class="chat__chat-content chat-content">
-                    <p class="content__title">Go all in on messaging</p>
-                    <p class="content__text">Cue the confetti—Zendesk messaging is here to help deliver rich conversational experiences that are connected across your web, mobile and social apps. It’s easy to automate and fast to scale for every customer need—and it’s all part of our new Zendesk Suite.</p>   
-                    <div class="content__links">
-                        <a href="#" class="content__link link">Watch Video</a>
-                        <a href="#" class="content__link link">get the detals</a>
+                    <p class="chat-content__title">Go all in on messaging</p>
+                    <p class="chat-content__text">Cue the confetti—Zendesk messaging is here to help deliver rich conversational experiences that are connected across your web, mobile and social apps. It’s easy to automate and fast to scale for every customer need—and it’s all part of our new Zendesk Suite.</p>   
+                    <div class="chat-content__links">
+                        <a href="#" class="chat-content__link">Watch Video</a>
+                        <a href="#" class="chat-content__link">get the detals</a>
                     </div>    
                 </div>
             </section>    
@@ -99,14 +100,14 @@
                     <h3 class="support__title">Where good conversations become great experiences</h3>
                     <p class="support__text">To make customers happy, you need conversational experiences—connected communication across any channel.</p>
                     <div class="support__support-buttons support-buttons">
-                        <button class="support-buttons_whith-line">Service</button>
-                        <button class="support-buttons_gray">Sales</button>
+                        <a href="#" class="support-buttons__whith-line">Service</a>
+                        <a href="#" class="support-buttons__gray">Sales</a>
                     </div>       
                 <div class="support__support-body support-body">
                     <div class="support-body__content">
                         <p class="support-body__title">Give customers the best support</p>
                         <p class="support-body__text">Customers want to connect any time, any place. Meet them where they are with the Zendesk Suite, which provides sophisticated, seamless support that flows across channels.</p>
-                        <a href="#" class="suppor-body__link">Learn more</a>  
+                        <a href="#" class="support-body__link">Learn more</a>  
                         <div class="support-body__quote quote">
                             <img src="img/Vector (1).png" alt="icon" class="quote__icon">
                             <p class="quote__title">squarespace</p>
@@ -132,57 +133,59 @@
             <section class="others-about-us">
                 <div class="others-about-us__others-about-us-column others-about-us-column">
                     <p class="others-about-us-column__title">CX Trends 2021</p>
-                    <p class="others-about-us-column__text_bold-text">New world, new CX</p>
+                    <p class="others-about-us-column__text-bold-text">New world, new CX</p>
                     <p class="others-about-us-column__text">Last year, customer needs changed in a blink. Learn how your team can keep up.</p>
                     <a href="URL" class="others-about-us-column__link">Read report</a>
                 </div>
                 <div class="others-about-us__others-about-us-column others-about-us-column">
                     <p class="others-about-us-column__title">CX Champions</p>
-                    <p class="others-about-us-column__text_bold-text">Speed + quality = agility</p>
+                    <p class="others-about-us-column__text-bold-text">Speed + quality = agility</p>
                     <p class="others-about-us-column__text">How leading CX orgs support customer-centric processes and drive business agility.</p>
                     <a href="URL" class="others-about-us-column__link">Read more</a>
                 </div>
-                <div class="others-about-us__column row-colmn">
+                <div class="others-about-us__others-about-us-column others-about-us-column">
                     <p class="others-about-us-column__title">New product offering</p>
-                    <p class="others-about-us-column__text_bold-text">Introducing the Zendesk Suite</p>
+                    <p class="others-about-us-column__text-bold-text">Introducing the Zendesk Suite</p>
                     <p class="others-about-us-column__text">Our new all-in-one customer service solution is easy to use, convenient for customers, and scales with your business.</p>
                     <a href="URL" class="others-about-us-column__link">Learn more</a>
                 </div>
             </section>    
             <section class="gartner">
                 <p class="gartner__text">#1 in Digital Customer Service use case by</p>
-                <p class="gartner__text__bold-text">Gartner</p>
+                <p class="gartner__bold-text">Gartner</p>
             </section>
             <section class="client">    
                 <div class="client__clients clients">
                     <p class="clients__title">The best customer experiences are built with Zendesk</p>
                     <p class="clients__text">The companies you use, use Zendesk</p>
                     <div class="clients__companies companies">
-                        <ul class="commpanies__list">
-                            <li class="commpanies__iteam">
-                                <a href="#"><img src="img/Frame (3).png" alt="icon" class="company__icon"></a>
+                        <ul class="companies__list">
+                            <li class="companies__iteam">
+                                <a href="#"><img src="img/Frame (3).png" alt="icon" class="companies__icon"></a>
                             </li>
-                            <li class="commpanies__iteam">
-                                <a href="#"><img src="img/Group (1).png" alt="icon" class="company__icon"></a>
+                            <li class="companies__iteam">
+                                <a href="#"><img src="img/Group (1).png" alt="icon" class="companies__icon"></a>
                             </li>
-                            <li class="commpanies__iteam">
-                                <a href="#"><img src="img/Frame.png" alt="icon" class="company__icon"></a>
+                            <li class="companies__iteam">
+                                <a href="#"><img src="img/Frame.png" alt="icon" class="companies__icon"></a>
                             </li>
-                            <li class="commpanies__iteam">
-                                <a href="#"><img src="img/Group (2).png" alt="icon" class="company__icon"></a>
+                            <li class="companies__iteam">
+                                <a href="#"><img src="img/Group (2).png" alt="icon" class="companies__icon"></a>
                             </li>
-                            <li class="commpanies__iteam">
-                                <a href="#"><img src="img/Frame (1).png" alt="icon" class="company__icon"></a>
+                            <li class="companies__iteam">
+                                <a href="#"><img src="img/Frame (1).png" alt="icon" class="companies__icon"></a>
                             </li>
-                            <li class="commpanies__iteam">
-                                <a href="#"><img src="img/Frame (2).png" alt="icon" class="company__icon"></a>
+                            <li class="companies__iteam">
+                                <a href="#"><img src="img/Frame (2).png" alt="icon" class="companies__icon"></a>
                             </li>
                         </ul>
                     </div>
-                    <a href="#" class="clients__link">See all customer stories</a>
-                    <img src="img/image 6.png" alt="partner" class="service__partner">
-                    <img src="img/image 7.png" alt="partner" class="service__partner">
-                    <img src="img/image 8.png" alt="partner" class="service__partner">
+                    <a href="#" class="more-customer-stories__link">See all customer stories</a>
+                    <div class="client__clients-partner">
+                        <img src="img/image 6.png" alt="partner" class="clients__partner">
+                        <img src="img/image 7.png" alt="partner" class="clients__partner">
+                        <img src="img/image 8.png" alt="partner" class="clients__partner">
+                    </div>
                 </div>
             </section>    
             <section class="details">
@@ -191,14 +194,30 @@
                 </div>
                 <div class="details__details-container details-container">
                     <ul class="details-container__list">
-                        <li class="details-container__item">The complete guide to understanding customer service</li>
-                        <li class="details-container__item">Zendesk update: staying safe and working for you</li>
-                        <li class="details-container__item">3 customer service metrics that matter</li>
-                        <li class="details-container__item">Most important customer service objectives</li>   
-                        <li class="details-container__item">Understanding machine learning vs deep learning</li>
-                        <li class="details-container__item">Transitioning to a remote workforce</li>
-                        <li class="details-container__item">The impact of COVID-19 on CX</li>
-                        <li class="details-container__item">5 of the best knowledge management examples</li>
+                        <li class="details-container__item">
+                            <a href="#" class="details-container__link">The complete guide to understanding customer service</a>
+                        </li>
+                        <li class="details-container__item">
+                            <a href="#" class="details-container__link">Zendesk update: staying safe and working for you</a>
+                        </li>
+                        <li class="details-container__item">
+                            <a href="#" class="details-container__link">3 customer service metrics that matter</a>
+                        </li>
+                        <li class="details-container__item">
+                            <a href="#" class="details-container__link">Most important customer service objectives</a>
+                        </li>   
+                        <li class="details-container__item">
+                            <a href="#" class="details-container__link"> Understanding machine learning vs deep learning</a>
+                        </li>
+                        <li class="details-container__item">
+                            <a href="#" class="details-container__link">Transitioning to a remote workforce</a>
+                        </li>
+                        <li class="details-container__item">
+                            <a href="#" class="details-container__link">The impact of COVID-19 on CX</a>
+                        </li>
+                        <li class="details-container__item">
+                            <a href="#"class="details-container__link">5 of the best knowledge management examples</a>
+                        </li>
                     </ul>
                 </div>
             </section >
@@ -206,7 +225,7 @@
                 <p class="trial__heading">Champions of awesome free trials</p>
                 <ul class="trial__block">
                     <li class="trial__list">
-                        <a class="trial__link">Start a free trial</a>
+                        <a class="trial__link-bg">Start a free trial</a>
                     </li>
                     <li class="trial__list">
                         <a class="trial__link">View demo</a>
@@ -215,206 +234,200 @@
             </section>        
             <footer class="footer">
                 <div class="footer__wrapper"> 
-                    <div class="footer__row">
+                    <div class="footer__column column">
                         <div class="footer__heading heading">
                             <a href="#" class="heading__logo"><img src="img/Frame.png" alt="smail"></a>
                             <p class="heading__title">Champions of customer service</p>
                         </div>
-                        <div class="footer__column column">
-                            <ul class="column__list">
-                                <li class="column__item">
-                                    <p>Our Products</p>
-                                </li>
-                                <li class="column__item">
-                                    <a class="column__link" href="#">Zendesk for service</a>
-                                </li>
-                                <li class="column__item">
-                                    <a class="column__link" href="#">Zendesk for sales</a>
-                                </li>
-                                <li class="column__item">
-                                    <a class="column__link" href="#">Platform and APIs</a>
-                                </li>
-                                <li class="column__item">
-                                    <a class="column__link" href="#">Marketplace</a>
-                                </li>
-                                <li class="column__item">
-                                    <a class="column__link" href="#">Product updates</a>
-                                </li>
-                            </ul>    
-                        </div>
-                        <div class="footer__column column">
-                            <ul class="column__list">
-                                <li class="column__item">
-                                    <p>Top Features</p>
-                                </li>
-                                <li class="column__item">
-                                    <a class="column__link" href="#">Ticketing system</a>
-                                </li>
-                                <li class="column__item">
-                                    <a class="column__link" href="#">Messaging & live chat</a>
-                                </li>
-                                <li class="column__item">
-                                    <a class="column__link" href="#">Help center</a>
-                                </li>
-                                <li class="column__item">
-                                    <a class="column__link" href="#">Voice</a>
-                                </li>
-                                <li class="column__item">
-                                    <a class="column__link" href="#">Community forums</a>
-                                </li>
-                                <li class="column__item">
-                                    <a class="column__link" href="#">Reporting & analytics</a>
-                                </li>
-                                <li class="column__item">
-                                    <a class="column__link" href="#">Answer Bot</a>
-                                </li>
-                                <li class="column__item">
-                                    <a class="column__link" href="#">Customer service software</a>
-                                </li>
-                                <li class="column__item">
-                                    <a class="column__link" href="#">Ticketing system software</a>
-                                </li>
-                                <li class="column__item">
-                                    <a class="column__link" href="#">Live chat software</a>
-                                </li>
-                                <li class="column__item">
-                                    <a class="column__link" href="#">Knowledge base</a>
-                                </li>
-                                <li class="column__item">
-                                    <a class="column__link" href="#">Forum software</a>
-                                </li>
-                                <li class="column__item">
-                                    <a class="column__link" href="#">Help desk software</a>
-                                </li>
-                                <li class="column__item">
-                                    <a class="column__link" href="#">Security</a>
-                                </li>
-                            </ul>    
-                        </div>
-                        <div class="footer__column column">
-                            <ul class="column__list">
-                                <li class="column__item">
-                                    <p>Resources</p>
-                                </li>
-                                <li class="column__item">
-                                    <a class="column__link" href="#">Product support</a>
-                                </li>
-                                <li class="column__item">
-                                    <a class="column__link" href="#">Request a demo</a>
-                                </li>
-                                <li class="column__item">
-                                    <a class="column__link" href="#">The Library</a>
-                                </li>
-                                <li class="column__item">
-                                    <a class="column__link" href="#">Training</a>
-                                </li>
-                                <li class="column__item">
-                                    <a class="column__link" href="#">Partners</a>
-                                </li>
-                                <li class="column__item">
-                                    <a class="column__link" href="#">Webinars</a>
-                                </li>
-                                <li class="column__item">
-                                    <a class="column__link" href="#">Customer Stories</a>
-                                </li>
-                                <li class="column__item">
-                                    <a class="column__link" href="#">Services</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="footer__column column">
-                            <ul class="column__list">
-                                <li class="column__item">
-                                    <p>Company</p>
-                                </li>
-                                <li class="column__item">
-                                    <a class="column__link" href="#">About us</a>
-                                </li>
-                                <li class="column__item">
-                                    <a class="column__link" href="#">Press</a>
-                                </li>
-                                <li class="column__item">
-                                    <a class="column__link" href="#">Investors</a>
-                                </li>
-                                <li class="column__item">
-                                    <a class="column__link" href="#">Events</a>
-                                </li>
-                                <li class="column__item">
-                                    <a class="column__link" href="#">Careers</a>
-                                </li>
-                                <li class="column__item">
-                                    <a class="column__link" href="#">Diversity & Inclusion</a>
-                                </li>
-                                <li class="column__item">
-                                    <a class="column__link" href="#">Social Impact</a>
-                                </li>
-                                <li class="column__item">
-                                    <a class="column__link" href="#">Contact us</a>
-                                </li>
-                                <li class="column__item">
-                                    <a class="column__link" href="#">Sitemap</a>
-                                </li>
-                                <li class="column__item">
-                                    <a class="column__link" href="#">System status</a>
-                                </li>
-                                <li class="column__item">
-                                    <a class="column__link" href="#">Product help</a>
-                                </li>
-                                <li class="column__item">
-                                    <a class="column__link" href="#">Legal</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="footer__column column">
-                            <ul class="column__list"`>
-                                <li class="column__item">
-                                    <p>Favorite Things</p>
-                                </li>
-                                <li class="column__item">
-                                    <a class="column__link" href="#">Zendesk for Enterprise</a>
-                                </li>
-                                <li class="column__item">
-                                    <a class="column__link" href="#">Zendesk for Small Business</a>
-                                </li>
-                                <li class="column__item">
-                                    <a class="column__link" href="#">Zendesk for Startups</a>
-                                </li>
-                                <li class="column__item">
-                                    <a class="column__link" href="#">Zendesk Benchmark</a>
-                                </li>
-                                <li class="column__item">
-                                    <a class="column__link" href="#">Gartner CRM Magic Quadrant</a>
-                                </li>
-                                <li class="column__item">
-                                    <a class="column__link" href="#">Customer Experience Trends</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div> 
-                    <hr class="footer__line" noshade>
-                    <div class="footer__subscribe subscribe">
-                        <p class="subscribe__hiding">Enter the fold</p>
-                        <p class="subscribe__text">Subscribe to our newsletter.</p>
-                    </div>
-                    <div class="footer__email email">
-                        <input type="text" name="email" size="40">
-                        <button><img src="img/Frame.png" alt="кнопка"></button>
-                    </div>
-                    <div >
-                        <ul>
-                            <li><a class="px12" href="URL">Terms of Use</a></li>
-                            <li><a class="px12" href="URL">Privacy Policy</a></li>
-                            <li><a class="px12" href="URL">Cookie Policy</a></li>
-                            <li><a class="px12" href="URL">©Zendesk 2021</a></li>
+                        <ul class="column__list">
+                            <li class="column__item">
+                                <p>Our Products</p>
+                            </li>
+                            <li class="column__item">
+                                <a class="column__link" href="#">Zendesk for service</a>
+                            </li>
+                            <li class="column__item">
+                                <a class="column__link" href="#">Zendesk for sales</a>
+                            </li>
+                            <li class="column__item">
+                                <a class="column__link" href="#">Platform and APIs</a>
+                            </li>
+                            <li class="column__item">
+                                <a class="column__link" href="#">Marketplace</a>
+                            </li>
+                            <li class="column__item">
+                                <a class="column__link" href="#">Product updates</a>
+                            </li>
                         </ul>
-                    </div>
-                    <div>
-                        <p class="px12">Gartner, Critical Capabilities for the CRM Customer Engagement Center, 8 June 2020, Nadine LeBlanc, Brian Manusama</p>
-                        <p class="px12">Gartner does not endorse any vendor, product or service depicted in its research publications and does not advise technology users to select only those vendors with the highest ratings or other designations. Gartner research publications consist of the opinions of Gartner's Research & Advisory organization and should not be construed as statements of fact. Gartner disclaims all warranties, expressed or implied, with respect to this research, including any warranties of merchantability or fitness for particular purpose. GARTNER is a registered trademark and service mark of Gartner, Inc. and/or its affiliates in the U.S. and internationally and is used herein with permissions. All rights reserved.</p>
-                    </div>
+                        <ul class="column__list">
+                            <li class="column__item">
+                                <p>Top Features</p>
+                            </li>
+                            <li class="column__item">
+                                <a class="column__link" href="#">Ticketing system</a>
+                            </li>
+                            <li class="column__item">
+                                <a class="column__link" href="#">Messaging & live chat</a>
+                            </li>
+                            <li class="column__item">
+                                <a class="column__link" href="#">Help center</a>
+                            </li>
+                            <li class="column__item">
+                                <a class="column__link" href="#">Voice</a>
+                            </li>
+                            <li class="column__item">
+                                <a class="column__link" href="#">Community forums</a>
+                            </li>
+                            <li class="column__item">
+                                <a class="column__link" href="#">Reporting & analytics</a>
+                            </li>
+                            <li class="column__item">
+                                <a class="column__link" href="#">Answer Bot</a>
+                            </li>
+                            <li class="column__item">
+                                <a class="column__link" href="#">Customer service software</a>
+                            </li>
+                            <li class="column__item">
+                                <a class="column__link" href="#">Ticketing system software</a>
+                            </li>
+                            <li class="column__item">
+                                <a class="column__link" href="#">Live chat software</a>
+                            </li>
+                            <li class="column__item">
+                                <a class="column__link" href="#">Knowledge base</a>
+                            </li>
+                            <li class="column__item">
+                                <a class="column__link" href="#">Forum software</a>
+                            </li>
+                            <li class="column__item">
+                                <a class="column__link" href="#">Help desk software</a>
+                            </li>
+                            <li class="column__item">
+                                <a class="column__link" href="#">Security</a>
+                            </li>
+                        </ul>  
+                        <ul class="column__list">
+                            <li class="column__item">
+                                <p>Resources</p>
+                            </li>
+                            <li class="column__item">
+                                <a class="column__link" href="#">Product support</a>
+                            </li>
+                            <li class="column__item">
+                                <a class="column__link" href="#">Request a demo</a>
+                            </li>
+                            <li class="column__item">
+                                <a class="column__link" href="#">The Library</a>
+                            </li>
+                            <li class="column__item">
+                                <a class="column__link" href="#">Training</a>
+                            </li>
+                            <li class="column__item">
+                                <a class="column__link" href="#">Partners</a>
+                            </li>
+                            <li class="column__item">
+                                <a class="column__link" href="#">Webinars</a>
+                            </li>
+                            <li class="column__item">
+                                <a class="column__link" href="#">Customer Stories</a>
+                            </li>
+                            <li class="column__item">
+                                <a class="column__link" href="#">Services</a>
+                            </li>
+                        </ul>
+                        <ul class="column__list">
+                            <li class="column__item">
+                                <p>Company</p>
+                            </li>
+                            <li class="column__item">
+                                <a class="column__link" href="#">About us</a>
+                            </li>
+                            <li class="column__item">
+                                <a class="column__link" href="#">Press</a>
+                            </li>
+                            <li class="column__item">
+                                <a class="column__link" href="#">Investors</a>
+                            </li>
+                            <li class="column__item">
+                                <a class="column__link" href="#">Events</a>
+                            </li>
+                            <li class="column__item">
+                                <a class="column__link" href="#">Careers</a>
+                            </li>
+                            <li class="column__item">
+                                <a class="column__link" href="#">Diversity & Inclusion</a>
+                            </li>
+                            <li class="column__item">
+                                 <a class="column__link" href="#">Social Impact</a>
+                            </li>
+                            <li class="column__item">
+                                <a class="column__link" href="#">Contact us</a>
+                            </li>
+                            <li class="column__item">
+                                <a class="column__link" href="#">Sitemap</a>
+                            </li>
+                            <li class="column__item">
+                                <a class="column__link" href="#">System status</a>
+                            </li>
+                            <li class="column__item">
+                                <a class="column__link" href="#">Product help</a>
+                            </li>
+                            <li class="column__item">
+                                <a class="column__link" href="#">Legal</a>
+                            </li>
+                        </ul>
+                        <ul class="column__list"`>
+                            <li class="column__item">
+                                <p>Favorite Things</p>
+                            </li>
+                            <li class="column__item">
+                                <a class="column__link" href="#">Zendesk for Enterprise</a>
+                            </li>
+                            <li class="column__item">
+                                <a class="column__link" href="#">Zendesk for Small Business</a>
+                            </li>
+                            <li class="column__item">
+                                <a class="column__link" href="#">Zendesk for Startups</a>
+                            </li>
+                            <li class="column__item">
+                                <a class="column__link" href="#">Zendesk Benchmark</a>
+                            </li>
+                            <li class="column__item">
+                                <a class="column__link" href="#">Gartner CRM Magic Quadrant</a>
+                            </li>
+                            <li class="column__item">
+                                <a class="column__link" href="#">Customer Experience Trends</a>
+                            </li>
+                        </ul>
+                    </div> 
+                    <div class="footer__subscribe-form">
+                        <div class="footer__subscribe subscribe">
+                            <p class="subscribe__hiding">Enter the fold</p>
+                            <p class="subscribe__text">Subscribe to our newsletter.</p>
+                        </div>
+                        <div class="footer__form form">
+                            <input type="text" name="email" size="40">
+                            <button class="form__subscribe-button">Subscribe</button>
+                        </div>
+                    </div>    
+                    <ul class="footer__nav-list">
+                        <li class="footer__nav-item">
+                            <a class="footer__nav-link" href="#">Terms of Use</a>
+                        </li>
+                        <li class="footer__nav-item">
+                            <a class="footer__nav-link" href="#">Privacy Policy</a>
+                        </li>
+                        <li class="footer__nav-item">
+                            <a class="footer__nav-link" href="#">Cookie Policy</a>
+                        </li>
+                        <li class="footer__nav-item">
+                            <a class="footer__nav-link" href="#">©Zendesk 2021</a>
+                        </li>
+                    </ul>
+                    <p class="footer__last-text">Gartner, Critical Capabilities for the CRM Customer Engagement Center, 8 June 2020, Nadine LeBlanc, Brian Manusama Gartner does not endorse any vendor, product or service depicted in its research publications and does not advise technology users to select only those vendors with the highest ratings or other designations. Gartner research publications consist of the opinions of Gartner's Research & Advisory organization and should not be construed as statements of fact. Gartner disclaims all warranties, expressed or implied, with respect to this research, including any warranties of merchantability or fitness for particular purpose. GARTNER is a registered trademark and service mark of Gartner, Inc. and/or its affiliates in the U.S. and internationally and is used herein with permissions. All rights reserved.</p>
                 </div>    
-            </footer>>
+            </footer>
         </main>
-    </div>
+    </div>    
 </body>
 </html>
