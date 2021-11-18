@@ -1,0 +1,9 @@
+@use "mixins";
+
+*,
+*::after,
+*::before {
+    @include mixins.reset;
+    box-sizing: border-box;
+    margin: 0 auto;
+}

@@ -1,0 +1,6 @@
+@use "../utils/mixins";
+
+.header__wrapper {
+    @include mixins.wrapper;
+    background-color: aqua;
+}  
