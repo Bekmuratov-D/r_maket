@@ -2,5 +2,12 @@
 
 .header__wrapper {
     @include mixins.wrapper;
-    background-color: aqua;
+    background-color: cadetblue;
 }  
+.header__functions {
+    display: flex;
+    background-color: brown;
+}
+.functions__item {
+    text-decoration: none;
+}

@@ -1,0 +1,14 @@
+.header__wrapper {
+  max-width: 1100px;
+  width: 100%;
+  background-color: cadetblue;
+}
+
+.header__functions {
+  display: flex;
+  background-color: brown;
+}
+
+.functions__link {
+  text-decoration: none;
+}
