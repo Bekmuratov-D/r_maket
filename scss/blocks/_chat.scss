@@ -1,0 +1,56 @@
+@use "../utils/mixins";
+@use "../utils/variables";
+
+.chat {
+    background-color: #FED6A8; 
+}
+.chat__wrapper {
+    @include mixins.wrapper;
+    font-family: "roboto", Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    min-height: 403px;
+}
+.how-use__img {
+    margin-top: -53px;
+    margin-right: 60.98px;
+    margin-bottom: 26px;
+    margin-left: -82px;
+}
+.chat__chat-content {
+    width: 457.91px;
+    height: 275px;
+    margin: 64px 72px 64px 0px;
+}
+.chat-content__title {
+    margin: 8px 80px 26px 8px;
+    color: #03363D;
+    font-size: 31px;
+    font-weight: 700;
+    line-height: 1.3;
+}
+.chat-content__text {
+    margin: 0px 8.89px 38px 8px;
+    color: #17494D;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+.chat-content__links {
+    display: flex;
+    width: 457.91px;
+    height: 43px;
+}
+.chat-content__link-left{
+    margin: 8px 13px 8px 31px;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.5;
+    color: #03363D;
+}
+.chat-content__link-right{
+    margin-top: 8px;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.5;
+    color: #03363D;
+}

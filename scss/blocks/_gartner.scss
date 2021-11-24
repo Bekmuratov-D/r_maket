@@ -1,0 +1,22 @@
+@use "../utils/mixins";
+@use "../utils/variables";
+
+.gartner {
+    background-color: #ffff; 
+} 
+.gartner__wrapper {
+    @include mixins.wrapper;
+    height: 196px;
+    background-color: #D6EEF2;
+}
+.gartner__text{
+    margin: 48px 207px 24px 247px;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 1.25;
+    color: #03363D;
+    min-width: 625px;
+}
+.gartner__logo{
+    margin: 0px 450px 48px 469px;
+}

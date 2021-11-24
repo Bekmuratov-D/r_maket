@@ -1,0 +1,49 @@
+@use "../utils/mixins";
+@use "../utils/variables";
+
+.client {
+    background-color: #F8F9F9; 
+}
+.client__wrapper {
+    @include mixins.wrapper;
+    font-family: "roboto", Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 64px;
+    margin-bottom: 94px;
+    display: flex;
+    min-height: 558.7px;
+}
+.client__companies {
+    width: 457.91px;
+    height: 558.7px;
+    margin: 64px 99.58px 0px 0px;
+}
+.client__title {
+    font-size: 47px;
+    font-weight: 700;
+    line-height: 1.19;
+    color: #03363D;
+    margin: 53.61px 51.42px 20px 8.48px;
+}
+.client__text {
+    margin: 0px 114px 23.94px 8.5px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.4;
+    color: #03363D;
+}
+.companies__list{
+    display: flex;
+    list-style: none;
+    width: 489.91px;
+    height: 156.59px;
+}
+.companies__more-link{
+    margin: 0px 247.42px 49px 8.48px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #03363D;
+}
+.client__partner{
+    margin: 7.61px -12px -87.91px 0px;
+}

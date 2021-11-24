@@ -2,12 +2,5 @@
 
 .header__wrapper {
     @include mixins.wrapper;
-    background-color: cadetblue;
+    font-family: "roboto", Verdana, Geneva, Tahoma, sans-serif;
 }  
-.header__functions {
-    display: flex;
-    background-color: brown;
-}
-.functions__item {
-    text-decoration: none;
-}

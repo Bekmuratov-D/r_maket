@@ -1,0 +1,75 @@
+@use "../utils/mixins";
+@use "../utils/variables";
+
+.promo {
+    background-color: #17494D; 
+}
+.promo__wrapper {
+    @include mixins.wrapper;
+    font-family: "roboto", Verdana, Geneva, Tahoma, sans-serif;
+    min-height: 566px;
+    display: flex;
+}  
+.promo__slogan {
+    width: 611px;
+    height: 317px;
+    font-size: 77px;
+    font-weight: 700;
+    line-height: 1.26;
+    margin-top: 91px;
+    margin-left: 7.79px;
+    margin-bottom: 158px;
+    color: #ffff;
+}
+.promo__content-wrapper {
+    margin-top: 120px;
+    margin-bottom: 120px;
+    margin-right: -35px;
+    width: 471.25px;
+    height: 260px;
+    margin-left: 24.25px;
+}
+.slogan-text {
+    margin-right: 217.98px;
+    color: #CE9FB7;
+}
+.slogan-text1 {
+    color: #00A656;
+    text-decoration: underline;
+    text-decoration-color: #ffff;
+}
+.slogan-text2 {
+    color: #30AABC;
+    text-decoration: underline;
+    text-decoration-color: #ffff;
+}
+.promo__text {
+    font-size: 20px;
+    color: #ffff;
+    font-weight: 400;
+    line-height: 1.4;
+    width: 407px;
+    height: 112px;
+    margin-top: 28px;
+    margin-right: 40.5px;
+    margin-bottom: 36px;
+    margin-left: 23.75px;
+}
+.promo__links-wrapper {
+    margin-left: 16px;
+    margin-right: 146.25px;
+}
+
+.promo__link-line {
+    padding: 14px 27px 13px 28px;
+    background-color: #FF6224;
+    color: #ffff;
+    text-decoration: none;
+}
+.promo__link-outline {
+    padding: 12px 24px 11px 24px;
+    color: #FF6224;
+    border: solid 2px ;
+    border-color: #FF6224;
+    text-decoration: none;
+}

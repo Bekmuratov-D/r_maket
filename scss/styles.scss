@@ -4,4 +4,17 @@
 @use "utils/mixins";
 @use "utils/general";
 
+@use "blocks/footer";
+@use "blocks/trial";
+@use "blocks/details";
+@use "blocks/client";
+@use "blocks/gartner";
+@use "blocks/others-about-us";
+@use "blocks/main-feature";
+@use "blocks/support";
+@use "blocks/promo";
+@use "blocks/chat";
 @use "blocks/header";
+@use "blocks/navigation";
+@use "blocks/logo";
+@use "blocks/functions";

@@ -1,0 +1,51 @@
+@use "../utils/mixins";
+@use "../utils/variables";
+
+.main-feature {
+    background-image: url('../../img/fon.jpg');
+    height: 640px;
+}
+.main-feature__wrapper{
+    @include mixins.wrapper;
+    font-family: "roboto", Verdana, Geneva, Tahoma, sans-serif;
+}
+.main-feature__container{
+    width: 625px;
+    height: 416px;
+    margin: 112px -11px 112px 466px;
+}
+.main-feature__heading{
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 1.16;
+    color: #03363D;
+    margin: 68px 106px 22px 64px;
+}
+.main-feature__text{
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.6;
+    margin: 0px 65px 22px 64px;
+}
+.main-feature__main-feature-links{
+    display: flex;
+    margin: 0px 55px 56px 56px;
+}
+.main-feature__link{
+    padding-top: 4px;
+    padding-bottom: 4px;
+    margin: 8px 36px 8px 7.56px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5px;
+    color: #03363D;
+}
+.main-feature__link-right {
+    padding-top: 4px;
+    padding-bottom: 4px;
+    margin: 8px 293px 8px 0px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5px;
+    color: #03363D;
+}

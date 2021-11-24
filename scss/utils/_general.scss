@@ -7,3 +7,7 @@
     box-sizing: border-box;
     margin: 0 auto;
 }
+
+body {
+    @include mixins.roboto-family;
+}

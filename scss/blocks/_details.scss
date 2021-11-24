@@ -1,0 +1,33 @@
+@use "../utils/mixins";
+@use "../utils/variables";
+
+.details {
+    background-color: #FFFF; 
+}
+.details__wrapper {
+    @include mixins.wrapper;
+    font-family: "roboto", Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    margin-top: 94px;
+    margin-bottom: 0px;
+    border-top: solid 2px;
+    border-color: #C2C8CC;
+}
+.details__heading {
+    margin: 94px 94.5px 172px 4px;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 1.25px;
+    color: #03363D;
+}
+.details-container__list {
+    columns: 2;
+    list-style: none;
+    margin: 90.09px 12px 16.41px 0px;
+}
+.details-container__link{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5px;
+    color: #03363D;
+}

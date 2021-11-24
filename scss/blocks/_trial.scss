@@ -1,0 +1,37 @@
+@use "../utils/mixins";
+@use "../utils/variables";
+
+.trial {
+    background-color: #D6EEF2; 
+}
+.trial__wrapper {
+    @include mixins.wrapper;
+    height: 416px;
+}
+.trial__heading{
+    margin: 130px 179px 39.5px 185px;
+    font-size: 47px;
+    font-weight: 400;
+    line-height: 1.2;
+    color: #03363D;
+}
+.trial__block{
+    display: flex;
+    margin: 0px 349px 122px 367px;
+}
+.trial__link-bg{
+    color: #ffff;
+    padding: 14px 26px 13px 26px;
+    background-color: #17494D;
+    font-size: 18px;
+    font-weight: 900px;
+    line-height: 1.38;
+    margin: 8.41px 16px 7.59px 7.52px;
+}
+.trial__link{
+    padding: 12px 24px 11px 24px;
+    border: solid 2px;
+    color: #17494D;
+    border-color: #17494D;
+    margin: 8.41px 8.48px 7.59px 0px;
+}
