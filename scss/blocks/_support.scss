@@ -9,13 +9,20 @@
     height: 1224px;
 }
 .support__title {
+    max-width: 576px;
+    width: 100%;
     margin: 108px 211px 24px 293px;
     font-size: 48px;
     font-weight: 700;
     line-height: 56px;
     color: #03363D;
+    max-height: 112px;
+    height: 100%;
 }
 .support__text {
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
     margin: 0px 198px 20px 278px;
     font-size: 20px;
     font-weight: 400px;
@@ -27,6 +34,9 @@
     display: flex;
 }
 .support-buttons__whith-line {
+    text-decoration: none;
+    border-bottom: solid 2px;
+    border-color: #03363D;
     margin: 13px 54.5px 12px 483px;
     color: #03363D;
     font-size: 16px;
@@ -44,6 +54,7 @@
 .support__container{
     display: flex;
 }
+
 .support-content__title {
     margin: 37px 99px 22px 39px;
     font-size: 32px;
@@ -57,8 +68,13 @@
     font-weight: 300;
     line-height: 1.6;
     color: #17494D;
+    max-width: 335px;
+    width: 100%;
 }
 .support-content__link{
+    text-decoration: none;
+    border-bottom: solid 2px;
+    border-color: #03363D;
     margin: 0px 360.42px 64px 39px;
     font-size: 18px;
     font-weight: 400;
@@ -68,12 +84,14 @@
 .support-content__quote{
     border-left: solid 2px;
     border-color: #C2C8CC;
-    margin: 0px 107.42px 410px 69px;
+    margin: 66px 107.42px 410px 69px;
 }
 .quote__icon{
     margin: 0px 103px 21px 34px;
 }
 .quote__text{
+    max-width: 279px;
+    width: 100%;
     margin: 0px 9px 13.98px 30px;
     font-size: 16px;
     font-weight: 300;
@@ -81,14 +99,18 @@
     color: #17494D;
 }
 .quote__text1 {
-    margin: 0px 282.42px 0px 34px;
+    max-width: 109px;
+    width: 100%;
+    margin: 0px 282.42px 0px 30px;
     font-size: 15px;
     font-weight: 300;
     line-height: 1.6;
     color: #17494D;
 }
 .quote__text2 {
-    margin: 0px 133px 410px 34px;
+    max-width: 258px;
+    width: 100%;
+    margin: 0px 133px 410px 30px;
     font-size: 14px;
     font-weight: 300;
     line-height: 1.28;

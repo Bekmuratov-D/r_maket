@@ -41,6 +41,9 @@
     height: 43px;
 }
 .chat-content__link-left{
+    text-decoration: none;
+    border-bottom: solid 2px;
+    border-color: #03363D;
     margin: 8px 13px 8px 31px;
     font-size: 18px;
     font-weight: 700;
@@ -48,7 +51,10 @@
     color: #03363D;
 }
 .chat-content__link-right{
-    margin-top: 8px;
+    text-decoration: none;
+    border-bottom: solid 2px;
+    border-color: #03363D;
+    margin: 8px 180px 10px 0px;
     font-size: 18px;
     font-weight: 700;
     line-height: 1.5;

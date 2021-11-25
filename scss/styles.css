@@ -301,15 +301,15 @@ a#margin-big {
   margin: 0 auto;
   height: 196px;
   background-color: #D6EEF2;
+  box-shadow: 0 0 10px -2px rgba(0, 0, 0, 0.5);
 }
 
 .gartner__text {
-  margin: 48px 207px 24px 247px;
+  padding: 48px 207px 24px 247px;
   font-size: 32px;
   font-weight: 700;
   line-height: 1.25;
   color: #03363D;
-  min-width: 625px;
 }
 
 .gartner__logo {
@@ -334,9 +334,10 @@ a#margin-big {
   border-bottom: solid 2px;
   border-color: #7D3D54;
   background-color: #F8F9F9;
-  justify-content: space-between;
   margin-top: 72px;
   margin-bottom: 72px;
+  margin-left: 5px;
+  margin-right: 5px;
 }
 
 .others-about-us__columns2 {
@@ -346,9 +347,10 @@ a#margin-big {
   border-bottom: solid 2px;
   border-color: #3D8DAE;
   background-color: #F8F9F9;
-  justify-content: space-between;
   margin-top: 72px;
   margin-bottom: 72px;
+  margin-left: 5px;
+  margin-right: 5px;
 }
 
 .others-about-us__columns3 {
@@ -358,19 +360,25 @@ a#margin-big {
   border-bottom: solid 2px;
   border-color: #C38F00;
   background-color: #F8F9F9;
-  justify-content: space-between;
   margin-top: 72px;
   margin-bottom: 72px;
+  margin-left: 5px;
+  margin-right: 5px;
 }
 
 .others-about-us-column__title-left {
+  max-width: 141px;
+  width: 100%;
   font-size: 14px;
   font-weight: 500;
   line-height: 1.57;
   margin: 32px 177px 8px 32px;
+  color: #03363D;
 }
 
 .others-about-us-column__text-bold-text-left {
+  max-width: 222px;
+  width: 100%;
   margin: 0px 96px 26px 32px;
   font-size: 24px;
   font-weight: 700;
@@ -379,7 +387,9 @@ a#margin-big {
 }
 
 .others-about-us-column__text-left {
-  margin: 0px 35px 47px 32px;
+  max-width: 283px;
+  width: 100%;
+  margin: 0px 35px 106px 32px;
   font-size: 15px;
   font-weight: 400;
   line-height: 1.6;
@@ -387,6 +397,11 @@ a#margin-big {
 }
 
 .others-about-us-column__link-left {
+  max-width: 87px;
+  width: 100%;
+  text-decoration: none;
+  border-bottom: solid 2px;
+  border-color: #03363D;
   margin: 0px 231px 42px 32px;
   font-size: 16px;
   font-weight: 400;
@@ -395,13 +410,18 @@ a#margin-big {
 }
 
 .others-about-us-column__title-middle {
+  max-width: 126px;
+  width: 100%;
   font-size: 14px;
   font-weight: 500;
   line-height: 1.57;
   margin: 32px 192px 8px 32px;
+  color: #03363D;
 }
 
 .others-about-us-column__text-bold-text-middle {
+  max-width: 261px;
+  width: 100%;
   margin: 0px 57px 26px 32px;
   font-size: 24px;
   font-weight: 700;
@@ -410,7 +430,9 @@ a#margin-big {
 }
 
 .others-about-us-column__text-middle {
-  margin: 0px 40px 50px 32px;
+  max-width: 278px;
+  width: 100%;
+  margin: 0px 40px 82px 32px;
   font-size: 15px;
   font-weight: 400;
   line-height: 1.6;
@@ -418,6 +440,11 @@ a#margin-big {
 }
 
 .others-about-us-column__link-middle {
+  max-width: 79px;
+  width: 100%;
+  text-decoration: none;
+  border-bottom: solid 2px;
+  border-color: #03363D;
   margin: 0px 239px 42px 32px;
   font-size: 16px;
   font-weight: 400;
@@ -426,6 +453,9 @@ a#margin-big {
 }
 
 .others-about-us-column__title-right {
+  max-width: 204px;
+  width: 100%;
+  color: #03363D;
   font-size: 14px;
   font-weight: 500;
   line-height: 1.57;
@@ -433,6 +463,8 @@ a#margin-big {
 }
 
 .others-about-us-column__text-bold-text-right {
+  max-width: 253px;
+  width: 100%;
   margin: 0px 65px 22px 32px;
   font-size: 24px;
   font-weight: 700;
@@ -441,7 +473,9 @@ a#margin-big {
 }
 
 .others-about-us-column__text-right {
+  max-width: 264px;
   margin: 0px 54px 26px 32px;
+  width: 100%;
   font-size: 15px;
   font-weight: 400;
   line-height: 1.6;
@@ -449,6 +483,11 @@ a#margin-big {
 }
 
 .others-about-us-column__link-right {
+  max-width: 83px;
+  width: 100%;
+  text-decoration: none;
+  border-bottom: solid 2px;
+  border-color: #03363D;
   margin: 0px 235px 44px 32px;
   font-size: 16px;
   font-weight: 400;
@@ -457,7 +496,7 @@ a#margin-big {
 }
 
 .main-feature {
-  background-image: url("../../img/fon.jpg");
+  background-image: url("../img/fon.jpg");
   height: 640px;
 }
 
@@ -466,12 +505,15 @@ a#margin-big {
   width: 100%;
   margin: 0 auto;
   font-family: "roboto", Verdana, Geneva, Tahoma, sans-serif;
+  padding-top: 112px;
+  padding-bottom: 112px;
 }
 
 .main-feature__container {
   width: 625px;
   height: 416px;
-  margin: 112px -11px 112px 466px;
+  margin: 0px -11px 0px 466px;
+  background-color: #FFFFFF;
 }
 
 .main-feature__heading {
@@ -479,7 +521,7 @@ a#margin-big {
   font-weight: 400;
   line-height: 1.16;
   color: #03363D;
-  margin: 68px 106px 22px 64px;
+  padding: 68px 106px 22px 64px;
 }
 
 .main-feature__text {
@@ -490,14 +532,18 @@ a#margin-big {
 }
 
 .main-feature__main-feature-links {
+  max-height: 20px;
+  height: 100%;
   display: flex;
   margin: 0px 55px 56px 56px;
 }
 
 .main-feature__link {
-  padding-top: 4px;
-  padding-bottom: 4px;
-  margin: 8px 36px 8px 7.56px;
+  text-decoration: none;
+  border-bottom: solid 2px;
+  border-color: #03363D;
+  margin-right: 36px;
+  margin-left: 7.56px;
   font-size: 16px;
   font-weight: 400;
   line-height: 1.5px;
@@ -505,9 +551,11 @@ a#margin-big {
 }
 
 .main-feature__link-right {
-  padding-top: 4px;
-  padding-bottom: 4px;
-  margin: 8px 293px 8px 0px;
+  text-decoration: none;
+  border-bottom: solid 2px;
+  border-color: #03363D;
+  margin-right: 293px;
+  margin-left: 0px;
   font-size: 16px;
   font-weight: 400;
   line-height: 1.5px;
@@ -526,14 +574,21 @@ a#margin-big {
 }
 
 .support__title {
+  max-width: 576px;
+  width: 100%;
   margin: 108px 211px 24px 293px;
   font-size: 48px;
   font-weight: 700;
   line-height: 56px;
   color: #03363D;
+  max-height: 112px;
+  height: 100%;
 }
 
 .support__text {
+  max-width: 600px;
+  width: 100%;
+  text-align: center;
   margin: 0px 198px 20px 278px;
   font-size: 20px;
   font-weight: 400px;
@@ -547,6 +602,9 @@ a#margin-big {
 }
 
 .support-buttons__whith-line {
+  text-decoration: none;
+  border-bottom: solid 2px;
+  border-color: #03363D;
   margin: 13px 54.5px 12px 483px;
   color: #03363D;
   font-size: 16px;
@@ -581,9 +639,14 @@ a#margin-big {
   font-weight: 300;
   line-height: 1.6;
   color: #17494D;
+  max-width: 335px;
+  width: 100%;
 }
 
 .support-content__link {
+  text-decoration: none;
+  border-bottom: solid 2px;
+  border-color: #03363D;
   margin: 0px 360.42px 64px 39px;
   font-size: 18px;
   font-weight: 400;
@@ -594,7 +657,7 @@ a#margin-big {
 .support-content__quote {
   border-left: solid 2px;
   border-color: #C2C8CC;
-  margin: 0px 107.42px 410px 69px;
+  margin: 66px 107.42px 410px 69px;
 }
 
 .quote__icon {
@@ -602,6 +665,8 @@ a#margin-big {
 }
 
 .quote__text {
+  max-width: 279px;
+  width: 100%;
   margin: 0px 9px 13.98px 30px;
   font-size: 16px;
   font-weight: 300;
@@ -610,7 +675,9 @@ a#margin-big {
 }
 
 .quote__text1 {
-  margin: 0px 282.42px 0px 34px;
+  max-width: 109px;
+  width: 100%;
+  margin: 0px 282.42px 0px 30px;
   font-size: 15px;
   font-weight: 300;
   line-height: 1.6;
@@ -618,7 +685,9 @@ a#margin-big {
 }
 
 .quote__text2 {
-  margin: 0px 133px 410px 34px;
+  max-width: 258px;
+  width: 100%;
+  margin: 0px 133px 410px 30px;
   font-size: 14px;
   font-weight: 300;
   line-height: 1.28;
@@ -670,16 +739,16 @@ a#margin-big {
 
 .slogan-text1 {
   color: #00A656;
-  text-decoration: underline;
-  -webkit-text-decoration-color: #ffff;
-          text-decoration-color: #ffff;
+  text-decoration: none;
+  border-bottom: solid 4px;
+  border-color: #ffff;
 }
 
 .slogan-text2 {
   color: #30AABC;
-  text-decoration: underline;
-  -webkit-text-decoration-color: #ffff;
-          text-decoration-color: #ffff;
+  text-decoration: none;
+  border-bottom: solid 4px;
+  border-color: #ffff;
 }
 
 .promo__text {
@@ -764,6 +833,9 @@ a#margin-big {
 }
 
 .chat-content__link-left {
+  text-decoration: none;
+  border-bottom: solid 2px;
+  border-color: #03363D;
   margin: 8px 13px 8px 31px;
   font-size: 18px;
   font-weight: 700;
@@ -772,7 +844,10 @@ a#margin-big {
 }
 
 .chat-content__link-right {
-  margin-top: 8px;
+  text-decoration: none;
+  border-bottom: solid 2px;
+  border-color: #03363D;
+  margin: 8px 180px 10px 0px;
   font-size: 18px;
   font-weight: 700;
   line-height: 1.5;
@@ -852,6 +927,8 @@ a#margin-big {
 .header__functions {
   list-style: none;
   margin-left: 721px;
+  max-width: 350px;
+  width: 100%;
 }
 
 .functions__item {
