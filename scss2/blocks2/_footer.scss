@@ -1,5 +1,5 @@
-@use "../utils/mixins";
-@use "../utils/variables";
+@use "../utils2/mixins";
+@use "../utils2/variables";
 
 .footer {
     background-color: #F8F9F9; 
@@ -79,27 +79,27 @@
     line-height: 1.39;
     color: #03363D;
 }
-.footer__form{
+.footer__form2{
     width: 450px;
     box-shadow: 0 4px 16px #C2C8CC;
     letter-spacing: 1px;
     display: flex;
 }
-.form__group{
+.form__group2{
     height: 52px;
     position: relative;
     border: 1px solid #68737D;
     width: 100%;
 }
 
-.form__lable{
+.form__lable2{
     position: absolute;
     top: 0;
     z-index: -1;
     color: #9e9e9e;
     transition: 0.3s;
 }
-.form__input{
+.form__input2{
     width: 100%;
     height: 100%;
     padding: 0 0 10px 0;
@@ -109,7 +109,7 @@
     outline: none;
     transition: 0.3s;
 }
-.form__input:focus{
+.form__input2:focus{
     border: 1px solid #1a73a8;
 }
 .form__subscribe-button{

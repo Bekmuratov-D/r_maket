@@ -1,0 +1,6 @@
+@use "../utils2/mixins";
+
+.header__wrapper {
+    @include mixins.wrapper;
+    font-family: "roboto", Verdana, Geneva, Tahoma, sans-serif;
+}  
