@@ -47,6 +47,10 @@
   margin: 0 auto;
 }
 
+.html {
+  height: 100%;
+}
+
 body {
   font-family: "roboto", Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -101,6 +105,7 @@ body {
   text-decoration: none;
   color: #ffff;
   background-color: #17494D;
+  transition: opacity 0.3s;
 }
 
 .logo {
@@ -241,33 +246,56 @@ body {
 }
 
 .form__group2 {
-  height: 52px;
-  position: relative;
-  border: 1px solid #68737D;
+  height: 50px;
   width: 100%;
+  border: none;
+  position: relative;
 }
 
 .form__lable2 {
+  left: 5px;
   position: absolute;
-  top: 0;
+  top: 5px;
   z-index: -1;
   color: #9e9e9e;
   transition: 0.3s;
+}
+
+.form__label-sex {
+  color: #9e9e9e;
+}
+
+.form__label-chek {
+  color: #9e9e9e;
 }
 
 .form__input2 {
   width: 100%;
   height: 100%;
   padding: 0 0 10px 0;
-  border: none;
-  border-bottom: 1px solid #e0e0e0;
+  border: 1px solid #e0e0e0;
   background-color: transparent;
   outline: none;
   transition: 0.3s;
 }
 
-.form__input2:focus {
-  border: 1px solid #1a73a8;
+.form__input:not(:-moz-placeholder-shown) ~ .form__lable2 {
+  bottom: -15px;
+  font-size: 9px;
+  color: #e0e0e0;
+}
+
+.form__input:not(:-ms-input-placeholder) ~ .form__lable2 {
+  bottom: -15px;
+  font-size: 9px;
+  color: #e0e0e0;
+}
+
+.form__input2:focus ~ .form__lable2,
+.form__input:not(:placeholder-shown) ~ .form__lable2 {
+  bottom: -15px;
+  font-size: 9px;
+  color: #e0e0e0;
 }
 
 .form__subscribe-button {
@@ -354,6 +382,7 @@ a#margin-big {
 .form__label {
   position: absolute;
   top: 0;
+  left: 0;
   z-index: -1;
   color: #e9e9e9;
   transition: 0.3px;
@@ -367,4 +396,53 @@ a#margin-big {
   background-color: transparent;
   outline: none;
   transition: 0.3s;
+}
+
+.form__input:focus {
+  border-bottom: 1px solid #1a73a8;
+}
+
+.form__label-sex {
+  width: 100%;
+  border-bottom: 1px solid #e0e0e0;
+  color: #e9e9e9;
+}
+
+.form__label-chek {
+  color: #e9e9e9;
+}
+
+.form__button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 7px;
+  color: #fff;
+  background-color: #0071f0;
+  outline: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.form__button:focus,
+.form__button:hover {
+  background-color: rgba(0, 113, 240, 0.7);
+}
+
+.form__input:not(:-moz-placeholder-shown) ~ .form__label {
+  top: -18px;
+  font-size: 10px;
+  color: #e0e0e0;
+}
+
+.form__input:not(:-ms-input-placeholder) ~ .form__label {
+  top: -18px;
+  font-size: 10px;
+  color: #e0e0e0;
+}
+
+.form__input:focus ~ .form__label,
+.form__input:not(:placeholder-shown) ~ .form__label {
+  top: -18px;
+  font-size: 10px;
+  color: #e0e0e0;
 }/*# sourceMappingURL=styles.css.map */
