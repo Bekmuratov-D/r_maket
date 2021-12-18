@@ -6,11 +6,10 @@
 }
 .chat__wrapper {
     @include mixins.wrapper;
-    font-family: "roboto", Verdana, Geneva, Tahoma, sans-serif;
     display: flex;
     min-height: 403px;
 }
-.how-use__img {
+.chat__how-use {
     margin-top: -53px;
     margin-right: 60.98px;
     margin-bottom: 26px;

@@ -6,7 +6,6 @@
 }
 .promo__wrapper {
     @include mixins.wrapper;
-    font-family: "roboto", Verdana, Geneva, Tahoma, sans-serif;
     min-height: 566px;
     display: flex;
 }  
@@ -28,6 +27,9 @@
     width: 471.25px;
     height: 260px;
     margin-left: 24.25px;
+}
+.h1{
+    display: none;
 }
 .slogan-text {
     margin-right: 217.98px;

@@ -284,8 +284,6 @@ a#margin-big {
   max-width: 1080px;
   width: 100%;
   margin: 0 auto;
-  font-family: "roboto", Verdana, Geneva, Tahoma, sans-serif;
-  display: flex;
   margin-top: 0px;
   margin-bottom: 0px;
   border-top: solid 2px;
@@ -331,7 +329,6 @@ a#margin-big {
   max-width: 1080px;
   width: 100%;
   margin: 0 auto;
-  font-family: "roboto", Verdana, Geneva, Tahoma, sans-serif;
   margin-top: 64px;
   margin-bottom: 94px;
   display: flex;
@@ -654,7 +651,6 @@ a#margin-big {
   max-width: 1080px;
   width: 100%;
   margin: 0 auto;
-  font-family: "roboto", Verdana, Geneva, Tahoma, sans-serif;
   padding-top: 112px;
   padding-bottom: 112px;
 }
@@ -845,7 +841,9 @@ a#margin-big {
 }
 
 .support__picture-woman {
-  margin: 0px -50px 174.97px 0px;
+  max-height: 775;
+  height: 100%;
+  padding: 0px -50px 174.97px 0px;
 }
 
 .promo {
@@ -856,7 +854,6 @@ a#margin-big {
   max-width: 1080px;
   width: 100%;
   margin: 0 auto;
-  font-family: "roboto", Verdana, Geneva, Tahoma, sans-serif;
   min-height: 566px;
   display: flex;
 }
@@ -880,6 +877,10 @@ a#margin-big {
   width: 471.25px;
   height: 260px;
   margin-left: 24.25px;
+}
+
+.h1 {
+  display: none;
 }
 
 .slogan-text {
@@ -942,12 +943,11 @@ a#margin-big {
   max-width: 1080px;
   width: 100%;
   margin: 0 auto;
-  font-family: "roboto", Verdana, Geneva, Tahoma, sans-serif;
   display: flex;
   min-height: 403px;
 }
 
-.how-use__img {
+.chat__how-use {
   margin-top: -53px;
   margin-right: 60.98px;
   margin-bottom: 26px;

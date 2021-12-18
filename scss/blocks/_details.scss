@@ -6,8 +6,6 @@
 }
 .details__wrapper {
     @include mixins.wrapper;
-    font-family: "roboto", Verdana, Geneva, Tahoma, sans-serif;
-    display: flex;
     margin-top: 0px;
     margin-bottom: 0px;
     border-top: solid 2px;

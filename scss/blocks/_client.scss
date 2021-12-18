@@ -6,7 +6,6 @@
 }
 .client__wrapper {
     @include mixins.wrapper;
-    font-family: "roboto", Verdana, Geneva, Tahoma, sans-serif;
     margin-top: 64px;
     margin-bottom: 94px;
     display: flex;
