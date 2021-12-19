@@ -11,6 +11,7 @@
     border-top: solid 2px;
     border-color: #C2C8CC;
     height: 346px;
+    display: flex;
 }
 .details__heading {
     max-width: 282px;
@@ -28,7 +29,7 @@
     margin: 90.09px 12px 16.41px 0px;
 }
 .details-container__item{
-    padding-bottom: 22px;
+    margin-bottom: 22px;
 }
 .details-container__link{
     text-decoration: none;
