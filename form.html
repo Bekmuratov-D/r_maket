@@ -8,92 +8,106 @@
     <link rel="stylesheet" href="scss2/styles.css">
 </head>
 <body>
-    <header>
-        <div class="header__wrapper">
-            <ul class="header__functions functions">
-                <li class="functions__item">
-                    <a class="functions__link" href="#">Sign in</a>
-                </li>
-                <li class="functions__item">
-                    <a class="functions__link" href="#">Product Support</a>
-                </li>
-                <li class="functions__item">
-                    <a class="functions__link" href="#">Company</a>
-                </li>
-                <li class="functions__item">
-                    <a class="functions__link" href="#">Contact us</a>
-                </li>
-                <li class="functions__item">
-                    <a class="functions__link" href="#">English</a>
-                </li>
-            </ul>
-            <div class="header-menu">
-                <a class="header__logo logo" href="#">
-                    <img class="logo" src="img/logo.svg" alt="Zendesk">
-                </a>
-                <nav class="header-menu__navigation navigation">
-                    <ul class="navigation__list">
-                        <li class="navigation__item">
-                            <a class="navigation__link" href="#">Products</a>
-                        </li>
-                        <li class="navigation__item">
-                            <a class="navigation__link" href="#">Pricing</a>
-                        </li>
-                        <li class="navigation__item">
-                            <a class="navigation__link" href="#">Solitions</a>
-                        </li>
-                        <li class="navigation__item">
-                            <a class="navigation__link" href="#">Demo</a>
-                        </li>
-                        <li class="navigation__item">
-                            <a class="navigation__link" href="#">Servises</a>
-                        </li>
-                        <li class="navigation__item">
-                            <a class="navigation__link" href="#">Resurse</a>
-                        </li>
-                        <li class="navigation__item-buton">
-                            <a href="#" class="navigation__link-buton">Get Startet</a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-        </div>        
-    </header>
-    <main>
-        <section class="form">
-            <form class="form__wrapper">
-                <h1 class="form__title">Регистрация</h1>
-                <div class="form__group">
-                    <input class="form__input">
-                    <label class="form__label">ФИО</label>
+    <div class="page">
+        <header>
+            <div class="header__wrapper">
+                <ul class="header__functions functions">
+                    <li class="functions__item">
+                        <a class="functions__link" href="#">Sign in</a>
+                    </li>
+                    <li class="functions__item">
+                        <a class="functions__link" href="#">Product Support</a>
+                    </li>
+                    <li class="functions__item">
+                        <a class="functions__link" href="#">Company</a>
+                    </li>
+                    <li class="functions__item">
+                        <a class="functions__link" href="#">Contact us</a>
+                    </li>
+                    <li class="functions__item">
+                        <a class="functions__link" href="#">English</a>
+                    </li>
+                </ul>
+                <div class="header-menu">
+                    <a class="header__logo logo" href="index.html">
+                        <img class="logo" src="img/logo.svg" alt="Zendesk">
+                    </a>
+                    <nav class="header-menu__navigation navigation">
+                        <ul class="navigation__list">
+                            <li class="navigation__item">
+                                <a class="navigation__link" href="#">Products</a>
+                            </li>
+                            <li class="navigation__item">
+                                <a class="navigation__link" href="#">Pricing</a>
+                            </li>
+                            <li class="navigation__item">
+                                <a class="navigation__link" href="#">Solitions</a>
+                            </li>
+                            <li class="navigation__item">
+                                <a class="navigation__link" href="#">Demo</a>
+                            </li>
+                            <li class="navigation__item">
+                                <a class="navigation__link" href="#">Servises</a>
+                            </li>
+                            <li class="navigation__item">
+                                <a class="navigation__link" href="#">Resurse</a>
+                            </li>
+                            <li class="navigation__item-buton">
+                                <a href="#" class="navigation__link-buton">Get Startet</a>
+                            </li>
+                        </ul>
+                    </nav>
                 </div>
-                <div class="form__group">
-                    <input class="form__input" placeholder=" ">
-                    <label class="form__label">Дата Рождения</label>
-                </div>
-                <div class="form__group">
-                    <label class="form__label-sex">Пол:
-                        <input type="radio" name="size">
-                        <label class="form__label-chek">М</label>
-                        <input type="radio" name="size">
-                        <label class="form__label-chek">Ж</label>
-                    </label>
-                </div>
-                <div class="form__group">
-                    <input type="password" class="form__input" placeholder=" ">
-                    <label class="form__label">Пароль</label>
-                </div>
-                <div class="form__group">
-                    <input type="email" class="form__input" placeholder=" ">
-                    <label class="form__label">email</label>
-                </div>
-                <div class="form__group">
-                    <input type="tel" class="form__input" placeholder=" ">
-                    <label class="form__label">телефон</label>
-                </div>
-                <button class="form__button">Войти</button>
-            </form>
-        </section>   
+            </div>        
+        </header>
+        <main>
+            <section class="form">
+                <form class="form__wrapper">
+                    <h1 class="form__title">Регистрация</h1>
+                    <div class="form__group">
+                        <input class="form__input">
+                        <label for="" class="form__label">ФИО</label>
+                    </div>
+                    <div class="form__group">
+                        <input class="form__input" placeholder=" ">
+                        <label class="form__label">Дата Рождения</label>
+                    </div>
+                    <div class="form__group">
+                        <label class="form__label-sex">Пол:
+                            <input type="radio" name="size">
+                            <label class="form__label-chek">М</label>
+                            <input type="radio" name="size">
+                            <label class="form__label-chek">Ж</label>
+                        </label>
+                    </div>
+                    <div class="form__group">
+                        <input type="password" class="form__input" placeholder=" ">
+                        <label class="form__label">Пароль</label>
+                    </div>
+                    <div class="form__group">
+                        <input type="email" class="form__input" placeholder=" ">
+                        <label class="form__label">email</label>
+                    </div>
+                    <div class="form__group">
+                        <input type="tel" class="form__input" placeholder=" ">
+                        <label class="form__label">телефон</label>
+                    </div>
+                    <div class="form__group">
+                        <label for="" class="form__label-sex" >Удобный интервал для связи:
+                            <input type="checkbox" name="size">
+                            <label class="form__label-chek">Утро</label>
+                            <input type="checkbox" name="size">
+                            <label class="form__label-chek">День</label>
+                            <input type="checkbox" name="size">
+                            <label class="form__label-chek">Вечер</label>
+                            <input type="checkbox" name="size">
+                            <label class="form__label-chek">Ночь</label>
+                        </label>
+                    </div>
+                    <button class="form__button">Войти</button>
+                </form>
+            </section>
+        </main>   
         <footer>
             <div class="footer__wrapper"> 
                 <div class="footer__subscribe-form">
@@ -126,6 +140,6 @@
                 <p class="footer__last-text">Gartner, Critical Capabilities for the CRM Customer Engagement Center, 8 June 2020, Nadine LeBlanc, Brian Manusama Gartner does not endorse any vendor, product or service depicted in its research publications and does not advise technology users to select only those vendors with the highest ratings or other designations. Gartner research publications consist of the opinions of Gartner's Research & Advisory organization and should not be construed as statements of fact. Gartner disclaims all warranties, expressed or implied, with respect to this research, including any warranties of merchantability or fitness for particular purpose. GARTNER is a registered trademark and service mark of Gartner, Inc. and/or its affiliates in the U.S. and internationally and is used herein with permissions. All rights reserved.</p>
             </div>
         </footer>
-    </main>
+    </div>
 </body>
 </html>
