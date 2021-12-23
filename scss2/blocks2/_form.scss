@@ -34,6 +34,9 @@
     color: #272626;
     transition: 0.3px;
 }
+.form__span{
+    color: red;
+}
 .form__input {
     width: 100%;
     padding: 0 0 10px 0;
@@ -65,10 +68,19 @@
     cursor: pointer;
     transition: 0.3s;
 }
+.form__reset{
+    margin-right: 150px;
+    border: none;
+    padding: 5px 10px;
+    background-color: red;
+    border-radius: 5px;
+}
+.form__reset,
 .form__button:focus,
 .form__button:hover {
     background-color: rgb(0, 113, 240, 0.7);
 }
+
 .form__input:focus ~ .form__label,
 .form__input:not(:placeholder-shown) ~ .form__label{
     top:-18px;

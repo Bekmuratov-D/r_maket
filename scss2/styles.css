@@ -61,6 +61,8 @@ html {
   width: 100%;
   margin: 0 auto;
   font-family: "roboto", Verdana, Geneva, Tahoma, sans-serif;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #C2C8CC;
 }
 
 .page {
@@ -387,6 +389,10 @@ a#margin-big {
   transition: 0.3px;
 }
 
+.form__span {
+  color: red;
+}
+
 .form__input {
   width: 100%;
   padding: 0 0 10px 0;
@@ -423,6 +429,15 @@ a#margin-big {
   transition: 0.3s;
 }
 
+.form__reset {
+  margin-right: 150px;
+  border: none;
+  padding: 5px 10px;
+  background-color: red;
+  border-radius: 5px;
+}
+
+.form__reset,
 .form__button:focus,
 .form__button:hover {
   background-color: rgba(0, 113, 240, 0.7);
