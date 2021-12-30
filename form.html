@@ -62,51 +62,58 @@
         </header>
         <main>
             <section class="form">
-                <form action="http://httpbin.org/post" method="post" class="form__wrapper">
-                    <h1 class="form__title">Регистрация</h1>
-                    <div class="form__group">
-                        <input class="form__input" required>
-                        <label for="" class="form__label">ФИО <span class="form__span">*</span></label>
-                    </div>
-                    <div class="form__group">
-                        <input class="form__input" placeholder=" ">
-                        <label class="form__label">Дата Рождения</label>
-                    </div>
-                    <div class="form__group">
-                        <label class="form__label-sex">Пол:
-                            <input type="radio" name="size">
-                            <label class="form__label-chek">М</label>
-                            <input type="radio" name="size">
-                            <label class="form__label-chek">Ж</label>
-                        </label>
-                    </div>
-                    <div class="form__group">
-                        <input type="password" class="form__input" placeholder=" " required>
-                        <label class="form__label">Пароль <span class="form__span">*</span></label>
-                    </div>
-                    <div class="form__group">
-                        <input type="email" class="form__input" placeholder=" " required>
-                        <label class="form__label">email <span class="form__span">*</span></label>
-                    </div>
-                    <div class="form__group">
-                        <input type="tel" class="form__input" placeholder=" " required>
-                        <label class="form__label">телефон <span class="form__span">*</span></label>
-                    </div>
-                    <div class="form__group">
-                        <label for="" class="form__label-sex" >Удобный интервал для связи:
-                            <input type="checkbox" name="size">
-                            <label class="form__label-chek">Утро</label>
-                            <input type="checkbox" name="size">
-                            <label class="form__label-chek">День</label>
-                            <input type="checkbox" name="size">
-                            <label class="form__label-chek">Вечер</label>
-                            <input type="checkbox" name="size">
-                            <label class="form__label-chek">Ночь</label>
-                        </label>
-                    </div>
-                    <input class="form__reset" type="reset">
-                    <button class="form__button">Войти</button>
-                </form>
+                <fieldset>
+                    <legend>Form</legend>
+                    <form action="http://httpbin.org/post" method="post" class="form__wrapper">
+                        <h1 class="form__title">Регистрация</h1>
+                        <div class="form__group">
+                            <input class="form__input" type="text" id="name" required>
+                            <label for="name" class="form__label">ФИО <span class="form__span">*</span></label>
+                        </div>
+                        <div class="form__group">
+                            <input class="form__input" type="date" id="date" placeholder=" ">
+                            <label for="date" class="form__label">Дата Рождения</label>
+                        </div>
+                        <div class="form__group">
+                            <p class="form__text">Пол</p>
+                            <div class="form__chek">
+                                <input id="m" type="radio" type="checkbox" name="size">
+                                <label for="m" class="form__label-chek">М</label>
+                                <input id="g" type="radio" type="checkbox" name="size">
+                                <label for="g" class="form__label-chek">Ж</label>
+                            </div>
+                        </div>
+                        <div class="form__group">
+                            <input type="email" class="form__input" id="email" placeholder=" " required>
+                            <label class="form__label" for="email">email <span class="form__span">*</span></label>
+                        </div>
+                        <div class="form__group">
+                            <input type="password" class="form__input" id="password" placeholder=" " required>
+                            <label class="form__label" for="password">Пароль <span class="form__span">*</span></label>
+                        </div>
+                        <div class="form__group">
+                            <input type="number" id="tel" class="form__input" placeholder=" " required>
+                            <label class="form__label" for="tel">телефон <span class="form__span">*</span></label>
+                        </div>
+                        <div class="form__group">
+                            <div for="" class="form__label-sex" >
+                                <p class="form__text">Удобный интервал для связи:</p>
+                                <div class="form__time-for">
+                                    <input type="checkbox" name="size" id="mor">
+                                    <label class="form__label-chek" for="mor">Утро</label>
+                                    <input type="checkbox" name="size" id="day">
+                                    <label class="form__label-chek" for="day">День</label>
+                                    <input type="checkbox" name="size" id="even">
+                                    <label class="form__label-chek" for="even">Вечер</label>
+                                    <input type="checkbox" name="size" id="night">
+                                    <label class="form__label-chek" for="night">Ночь</label>
+                                </div>
+                            </div>
+                        </div>
+                        <input class="form__reset" type="reset">
+                        <button class="form__button">Войти</button>
+                    </form>
+                </fieldset>
             </section>
         </main>   
         <footer>
