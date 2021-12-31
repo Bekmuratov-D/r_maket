@@ -25,6 +25,7 @@
     line-height: 1.5;
     text-decoration: none;
     color: #17494D;
+    transition: opacity 0.5s;
 }
 .navigation__item-buton{
     margin-top: 16px;
@@ -45,4 +46,17 @@
 .navigation__link-buton:focus {
     padding: 8px 28px 10px 30px;
     box-shadow: 0 4px 16px #C2C8CC;
+}
+
+.navigation__link:hover{
+    color: black;
+    background-color:#9dd4d8 ;
+    box-shadow: 0 0 5px rgba(0,0,0,0.5);
+}
+.navigation__link:active{
+    color: #17494D;
+    background-color:#aee0e4
+}
+.navigation__link:visited{
+    color: #48797c;
 }

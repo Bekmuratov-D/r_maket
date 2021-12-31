@@ -85,17 +85,17 @@
 }
 .form__group{
     height: 50px;
-    position: relative;
-    border: none;
     width: 100%;
+    border: none;
+    position: relative;
 }
 
 .form__lable{
     left: 5px;
     position: absolute;
-    top: 0;
+    top: 10px;
     color: #9e9e9e;
-    transition: 0.3s;
+    transition: 0.7s;
 }
 .form__input{
     width: 100%;
@@ -106,11 +106,9 @@
     outline: none;
     transition: 0.3s;
 }
-.form__input:focus ~ .form__label,
-.form__input:not(:placeholder-shown) ~ .form__label{
-    top:-18px;
-    font-size: 10px;
-    color: #e0e0e0;
+.form__input:focus ~ .form__lable,
+.form__input:not(:placeholder-shown) ~ .form__lable{
+    z-index: -1;
 }
 .form__input:focus{
     border: 1px solid #1a73a8;

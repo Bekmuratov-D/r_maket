@@ -78,3 +78,15 @@
     border-color: #FF6224;
     text-decoration: none;
 }
+
+.promo__link-line:hover{
+    color: black;
+    background-color:#FF6224 ;
+    box-shadow: 0 0 5px rgba(0,0,0,0.5);
+}
+.promo__link-line:active{
+    background-color:#c2572d;
+}
+.promo__link-line:visited{
+    border-color: royalblue;
+}

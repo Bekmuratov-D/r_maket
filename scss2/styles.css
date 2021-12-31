@@ -367,11 +367,27 @@ a#margin-big {
 }
 
 .form__wrapper {
-  width: 400px;
+  width: 1000px;
   padding: 40px;
   border-radius: 10px;
   box-shadow: 0 4px 16px #ccc;
   letter-spacing: 1px;
+}
+
+.form__container {
+  display: flex;
+}
+
+.form__personal-info {
+  padding: 20px;
+}
+
+.form__contact-details {
+  padding: 20px;
+}
+
+.form__column {
+  width: 400px;
 }
 
 .form__title {
