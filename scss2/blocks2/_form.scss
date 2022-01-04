@@ -2,7 +2,6 @@
 @use "../utils2/variables";
 
 .form {
-    font-family: "roboto", Verdana, Geneva, Tahoma, sans-serif;
     display: flex;
     justify-content: center;
     padding: 50px 0 50px 0;
@@ -44,7 +43,7 @@
     left: 0;
     z-index: -1;
     color: #272626;
-    transition: 0.3px;
+    transition: 0.2s;
 }
 .form__span{
     color: red;
@@ -61,15 +60,35 @@
 .form__input:focus {
     border-bottom: 1px solid #1a73a8;
 }
-.form__label-sex {
-    width: 100%;
-    border-bottom: 1px solid #e0e0e0;
-    color: #222222;
-    display: block;
-}
 .form__label-chek {
     color: #373434;
 }
+.form__radio-m:checked ~ .form__label-chek-m{
+    background-color: #17494D;
+    color: white;
+}
+.form__radio-j:checked ~ .form__label-chek-j{
+    background-color: #17494D;
+    color: white;
+}
+.time-for__mor:checked ~ .form__label-chek-mor{
+    background-color: #17494D;
+    color: white;
+}
+.time-for__day:checked ~ .form__label-chek-day{
+    background-color: #17494D;
+    color: white;
+}
+.time-for__eve:checked ~ .form__label-chek-eve{
+    background-color: #17494D;
+    color: white;
+}
+.time-for__night:checked ~ .form__label-chek-night{
+    background-color: #17494D;
+    color: white;
+}
+
+
 .form__button{
     padding: 10px 20px;
     border: none;
@@ -81,16 +100,22 @@
     transition: 0.3s;
 }
 .form__reset{
-    margin-right: 150px;
+    margin-top: 30px;
+    margin-right: 100px;
+    margin-left: 600px;
     border: none;
-    padding: 5px 10px;
-    background-color: red;
-    border-radius: 5px;
+    padding: 10px 10px;
+    border-radius: 7px;
 }
-.form__reset,
+
 .form__button:focus,
 .form__button:hover {
     background-color: rgb(0, 113, 240, 0.7);
+}
+.form__input:hover ~ .form__label{
+    font-size: 20px;
+    color: rgb(17, 118, 42);
+    font-weight: bold;
 }
 
 .form__input:focus ~ .form__label,
@@ -98,4 +123,11 @@
     top:-18px;
     font-size: 10px;
     color: #e0e0e0;
+}
+
+.form__reset:disabled{
+    background-color: rgb(136, 131, 131);
+    cursor: not-allowed; 
+    pointer-events: none;
+    color: rgb(220, 216, 216);
 }

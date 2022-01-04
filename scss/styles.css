@@ -51,6 +51,38 @@ body {
   font-family: "roboto", Verdana, Geneva, Tahoma, sans-serif;
 }
 
+p::-moz-selection {
+  background-color: #f88f83;
+}
+
+p::selection {
+  background-color: #f88f83;
+}
+
+h3::-moz-selection {
+  background-color: #8be424;
+}
+
+h3::selection {
+  background-color: #8be424;
+}
+
+h2::-moz-selection {
+  background-color: #fff238;
+}
+
+h2::selection {
+  background-color: #fff238;
+}
+
+a::-moz-selection {
+  background-color: #4fffb6;
+}
+
+a::selection {
+  background-color: #4fffb6;
+}
+
 .footer {
   background-color: #F8F9F9;
   padding-top: 95px;
@@ -197,6 +229,7 @@ body {
   border: none;
   background-color: #17494D;
   transition: 0.3s;
+  cursor: pointer;
 }
 
 .form__subscribe-button:focus {
@@ -276,6 +309,17 @@ a#margin-big {
   font-weight: 900px;
   line-height: 1.38;
   margin: 8.41px 16px 7.59px 0;
+  text-decoration: none;
+  transition: 0.1s;
+}
+.trial__link-bg:hover {
+  background-color: #36979e;
+}
+.trial__link-bg:active {
+  background-color: #246b70;
+}
+.trial__link-bg:visited {
+  color: bisque;
 }
 
 .trial__link {
@@ -284,6 +328,14 @@ a#margin-big {
   color: #17494D;
   border-color: #17494D;
   margin: 8.41px 8.48px 7.59px 0px;
+  text-decoration: none;
+  transition: 0.1s;
+}
+.trial__link:hover {
+  background-color: #85c3c7;
+}
+.trial__link:active {
+  background-color: #aabdbf;
 }
 
 .details {
@@ -438,11 +490,22 @@ a#margin-big {
 }
 
 .companies__more-link {
-  margin: 0px 247.42px 49px 8.48px;
+  margin: 0px 200px 49px 8.48px;
   font-size: 18px;
   font-weight: 400;
   line-height: 1.5;
+  transition: 0.2s;
   color: #03363D;
+}
+.companies__more-link:hover {
+  font-size: 20px;
+}
+.companies__more-link:active {
+  font-size: 19px;
+  opacity: 0.6;
+}
+.companies__more-link:visited {
+  color: #356bb3;
 }
 
 .client__partner {
@@ -488,8 +551,6 @@ a#margin-big {
 
 .others-about-us__columns {
   list-style: none;
-  width: 350px;
-  height: 336px;
   border-bottom: solid 2px;
   border-color: #7D3D54;
   background-color: #F8F9F9;
@@ -523,6 +584,11 @@ a#margin-big {
   margin-bottom: 72px;
   margin-left: 5px;
   margin-right: 5px;
+}
+
+.others-about-us__columns-face1 {
+  margin-bottom: 3px;
+  background-color: yellow;
 }
 
 .others-about-us-column__title-left {
@@ -561,11 +627,24 @@ a#margin-big {
   text-decoration: none;
   border-bottom: solid 2px;
   border-color: #03363D;
-  margin: 0px 231px 42px 32px;
+  margin: 0px 200px 42px 32px;
   font-size: 16px;
   font-weight: 400;
   line-height: 1.5;
   color: #03363D;
+  transition: 0.3s;
+}
+
+.others-about-us-column__link-left:hover {
+  font-size: 18px;
+}
+
+.others-about-us-column__link-left:active {
+  font-size: 17px;
+}
+
+.others-about-us-column__link-left:visited {
+  color: #469797;
 }
 
 .others-about-us-column__title-middle {
@@ -604,11 +683,24 @@ a#margin-big {
   text-decoration: none;
   border-bottom: solid 2px;
   border-color: #03363D;
-  margin: 0px 239px 42px 32px;
+  margin: 0px 200px 42px 32px;
   font-size: 16px;
   font-weight: 400;
   line-height: 1.5;
   color: #03363D;
+  transition: 0.3S;
+}
+
+.others-about-us-column__link-middle:hover {
+  font-size: 18px;
+}
+
+.others-about-us-column__link-middle:active {
+  font-size: 17px;
+}
+
+.others-about-us-column__link-middle:visited {
+  color: #469797;
 }
 
 .others-about-us-column__title-right {
@@ -647,11 +739,24 @@ a#margin-big {
   text-decoration: none;
   border-bottom: solid 2px;
   border-color: #03363D;
-  margin: 0px 235px 44px 32px;
+  margin: 0px 200px 44px 32px;
   font-size: 16px;
   font-weight: 400;
   line-height: 1.5;
   color: #03363D;
+  transition: 0.3s;
+}
+
+.others-about-us-column__link-right:hover {
+  font-size: 18px;
+}
+
+.others-about-us-column__link-right:active {
+  font-size: 17px;
+}
+
+.others-about-us-column__link-right:visited {
+  color: #469797;
 }
 
 .main-feature {
@@ -707,6 +812,7 @@ a#margin-big {
   font-weight: 400;
   line-height: 1.5px;
   color: #03363D;
+  transition: 0.4s;
 }
 
 .main-feature__link-right {
@@ -719,6 +825,17 @@ a#margin-big {
   font-weight: 400;
   line-height: 1.5px;
   color: #03363D;
+  transition: 0.4s;
+}
+
+.main-feature__link:hover,
+.main-feature__link-right:hover {
+  border-bottom: solid 3px #000000;
+}
+
+.main-feature__link:active,
+.main-feature__link-right:active {
+  background-color: aqua;
 }
 
 .support {
@@ -770,6 +887,15 @@ a#margin-big {
   font-size: 16px;
   font-weight: 700;
   line-height: 1.37;
+  transition: 0.3s;
+}
+
+.support-buttons__whith-line:hover {
+  font-size: 17px;
+}
+
+.support-buttons__whith-line:active {
+  font-size: 16px;
 }
 
 .support-buttons__gray {
@@ -779,6 +905,15 @@ a#margin-big {
   line-height: 1.45;
   color: #68737D;
   text-decoration: none;
+  transition: 0.3s;
+}
+
+.support-buttons__gray:hover {
+  font-size: 17px;
+}
+
+.support-buttons__gray:active {
+  font-size: 16px;
 }
 
 .support__container {
@@ -812,6 +947,15 @@ a#margin-big {
   font-weight: 400;
   line-height: 1.5;
   color: #03363D;
+  transition: 0.3s;
+}
+
+.support-content__link-span {
+  color: #C2C8CC;
+}
+
+.support-content__link:focus ~ .support-content__link-span {
+  color: black;
 }
 
 .support-content__quote {
@@ -957,11 +1101,25 @@ a#margin-big {
 }
 
 .promo__link-line:active {
-  background-color: #c2572d;
+  background-color: #e9996d;
 }
 
 .promo__link-line:visited {
   border-color: royalblue;
+}
+
+.promo__link-outline:hover {
+  color: black;
+  background-color: #FF6224;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.promo__link-outline:active {
+  background-color: #c2572d;
+}
+
+.promo__link-outline:visited {
+  background-color: #e9996d;
 }
 
 .chat {
@@ -1015,22 +1173,40 @@ a#margin-big {
   text-decoration: none;
   border-bottom: solid 2px;
   border-color: #03363D;
-  margin: 8px 13px 8px 31px;
+  margin: 0 auto;
   font-size: 18px;
   font-weight: 700;
   line-height: 1.5;
   color: #03363D;
+  transition: 0.3s;
 }
 
 .chat-content__link-right {
   text-decoration: none;
   border-bottom: solid 2px;
   border-color: #03363D;
-  margin: 8px 180px 10px 0px;
+  margin: 0 auto;
   font-size: 18px;
   font-weight: 700;
   line-height: 1.5;
   color: #03363D;
+  transition: 0.3s;
+}
+
+.chat-content__link-left:hover {
+  font-size: 20px;
+}
+
+.chat-content__link-left:active {
+  font-size: 17px;
+}
+
+.chat-content__link-right:hover {
+  font-size: 20px;
+}
+
+.chat-content__link-right:active {
+  font-size: 17px;
 }
 
 .header__wrapper {

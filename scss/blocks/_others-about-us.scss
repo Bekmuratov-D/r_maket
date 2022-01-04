@@ -10,8 +10,6 @@
 }
 .others-about-us__columns{
     list-style: none;
-    width: 350px;
-    height: 336px;
     border-bottom: solid 2px;
     border-color: #7D3D54;
     background-color: #F8F9F9;
@@ -44,6 +42,13 @@
     margin-left: 5px;
     margin-right: 5px;
 }
+
+.others-about-us__columns-face1{
+    margin-bottom: 3px;
+    background-color: yellow;
+}
+
+
 .others-about-us-column__title-left{
     max-width: 141px;
     width: 100%;
@@ -77,11 +82,21 @@
     text-decoration: none;
     border-bottom: solid 2px;
     border-color: #03363D;
-    margin: 0px 231px 42px 32px;
+    margin: 0px 200px 42px 32px;
     font-size: 16px;
     font-weight: 400;
     line-height: 1.5;
     color: #03363D;
+    transition: 0.3s;
+}
+.others-about-us-column__link-left:hover{
+    font-size: 18px;
+}
+.others-about-us-column__link-left:active{
+    font-size: 17px;
+}
+.others-about-us-column__link-left:visited{
+    color: rgb(70, 151, 151);
 }
 
 .others-about-us-column__title-middle{
@@ -117,11 +132,21 @@
     text-decoration: none;
     border-bottom: solid 2px;
     border-color: #03363D;
-    margin: 0px 239px 42px 32px;
+    margin: 0px 200px 42px 32px;
     font-size: 16px;
     font-weight: 400;
     line-height: 1.5;
     color: #03363D;
+    transition: 0.3S;
+}
+.others-about-us-column__link-middle:hover{
+    font-size: 18px;
+}
+.others-about-us-column__link-middle:active{
+    font-size: 17px;
+}
+.others-about-us-column__link-middle:visited{
+    color: rgb(70, 151, 151);
 }
 
 .others-about-us-column__title-right{
@@ -157,9 +182,19 @@
     text-decoration: none;
     border-bottom: solid 2px;
     border-color: #03363D;
-    margin: 0px 235px 44px 32px;
+    margin: 0px 200px 44px 32px;
     font-size: 16px;
     font-weight: 400;
     line-height: 1.5;
     color: #03363D;
+    transition: 0.3s;
+}
+.others-about-us-column__link-right:hover{
+    font-size: 18px;
+}
+.others-about-us-column__link-right:active{
+    font-size: 17px;
+}
+.others-about-us-column__link-right:visited{
+    color: rgb(70, 151, 151);
 }

@@ -4,7 +4,7 @@
 .footer {
     background-color: #F8F9F9; 
     padding-top: 95px;
-    padding-bottom: 50px
+    margin-bottom: 0;
 }
 .footer__wrapper {
     @include mixins.wrapper;
@@ -21,6 +21,8 @@
 .column__column{
     max-width: 1080px;
     width: 100%;
+    margin-top: 96px;
+    margin-left: 8px;
     display: flex;
     align-items: flex-start;
     margin-top: 7px;
@@ -59,6 +61,7 @@
 .footer__subscribe-form{
     padding-top: 24px;
     padding-right: 365px;
+    padding-bottom: 8.4px;
     padding-left: 0px;
     display: flex;
     align-items: flex-start;
@@ -71,33 +74,35 @@
 }
 .subscribe__hiding{
     margin-left: 0px;
-    margin: 0 124px 6px 0px;
+    padding: 0 124px 6px 0px;
     font-size: 23px;
     font-weight: 400;
     line-height: 1.39;
     color: #03363D;
 }
-.footer__form{
+.footer__form2{
     width: 450px;
     box-shadow: 0 4px 16px #C2C8CC;
     letter-spacing: 1px;
     display: flex;
 }
-.form__group{
+.form__group2{
     height: 50px;
     width: 100%;
     border: none;
     position: relative;
 }
 
-.form__lable{
+.form__lable2{
     left: 5px;
     position: absolute;
-    top: 10px;
+    top: 5px;
+    z-index: -1;
     color: #9e9e9e;
-    transition: 0.7s;
+    transition: 0.3s;
 }
-.form__input{
+
+.form__input2{
     width: 100%;
     height: 100%;
     padding: 0 0 10px 0;
@@ -106,12 +111,12 @@
     outline: none;
     transition: 0.3s;
 }
-.form__input:focus ~ .form__lable,
-.form__input:not(:placeholder-shown) ~ .form__lable{
-    z-index: -1;
-}
-.form__input:focus{
-    border: 1px solid #1a73a8;
+
+.form__input2:focus ~ .form__lable2,
+.form__input:not(:placeholder-shown) ~ .form__lable2{
+    bottom: -15px;
+    font-size: 9px;
+    color: #e0e0e0;
 }
 .form__subscribe-button{
     color: #FFFF;
@@ -130,7 +135,7 @@
     background-color: rgba(0, 113, 240, 0.7 );
 }
 .subscribe__text{
-    margin: 0px 68px 16px 0px;
+    padding: 0px 68px 16px 0px;
     font-size: 15px;
     font-weight: 400;
     line-height: 1.6;
@@ -139,7 +144,7 @@
 .footer__nav-list{
     list-style: none;
     display: flex;
-    margin: 15.59px 716px 0 0;
+    padding: 15.59px 716px 32px 0px;
 }
 .footer__nav-link{
     text-decoration: none;
@@ -158,4 +163,5 @@ a#margin-big{
     font-weight: 400;
     line-height: 1.28;
     color: #68737D;
+    padding-bottom: 32px;
 }

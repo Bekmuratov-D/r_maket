@@ -11,3 +11,15 @@
 body {
     @include mixins.roboto-family;
 }
+p::selection{
+    background-color: rgb(248, 143, 131);
+}
+h3::selection{
+    background-color: rgb(139, 228, 36);
+}
+h2::selection{
+    background-color: rgb(255, 242, 56);
+}
+a::selection{
+    background-color: rgb(79, 255, 182);    
+}

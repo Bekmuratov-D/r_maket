@@ -1,0 +1,48 @@
+@use "../utils2/mixins";
+@use "../utils2/variables";
+
+
+.form2-definition__wrapper{
+    @include mixins.wrapper;
+    max-width: 1000px;
+}
+.form2__checkbox{
+    display: flex;
+}
+
+.form2__checkbox{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.definition__title{
+    margin-top: 30px;
+    color: #17494D;
+}
+.definition__title::first-letter{
+    font-size: 25px;
+    font-weight: bold;
+    color: rgb(7, 1, 1);
+}
+.definition__text{
+    color: #17494D;
+}
+
+.definition__text::before{
+    content: "🛈";
+}
+
+
+.form2__list-chekbox{
+    width: 300px;
+    padding: 20px;
+}
+
+.iteam-input:checked ~ .iteam-label {
+    text-decoration: line-through;
+}
+
+.form2__list-div:nth-child(even) { 
+    background: #17494D; 
+    color: white;
+}

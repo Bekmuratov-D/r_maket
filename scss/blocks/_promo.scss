@@ -85,8 +85,20 @@
     box-shadow: 0 0 5px rgba(0,0,0,0.5);
 }
 .promo__link-line:active{
-    background-color:#c2572d;
+    background-color:rgb(233, 153, 109);
 }
 .promo__link-line:visited{
     border-color: royalblue;
+}
+
+.promo__link-outline:hover{
+    color: black;
+    background-color:#FF6224 ;
+    box-shadow: 0 0 5px rgba(0,0,0,0.5);
+}
+.promo__link-outline:active{
+    background-color:#c2572d;
+}
+.promo__link-outline:visited{
+    background-color: rgb(233, 153, 109);
 }

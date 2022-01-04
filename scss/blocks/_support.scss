@@ -34,6 +34,8 @@
     height: 47px;
     display: flex;
 }
+
+
 .support-buttons__whith-line {
     text-decoration: none;
     border-bottom: solid 2px;
@@ -43,7 +45,16 @@
     font-size: 16px;
     font-weight: 700;
     line-height: 1.37;
+    transition: 0.3s;
 }
+.support-buttons__whith-line:hover{
+    font-size: 17px;
+}
+.support-buttons__whith-line:active{
+    font-size: 16px;
+}
+
+
 .support-buttons__gray {
     margin: 13px 400px 12px 0px;
     font-size: 15px;
@@ -51,7 +62,16 @@
     line-height: 1.45;
     color: #68737D;
     text-decoration: none;
+    transition: 0.3s;
 }
+.support-buttons__gray:hover{
+    font-size: 17px;
+}
+.support-buttons__gray:active{
+    font-size: 16px;
+}
+
+
 .support__container{
     display: flex;
 }
@@ -81,7 +101,16 @@
     font-weight: 400;
     line-height: 1.5;
     color: #03363D;
+    transition: 0.3s;
 }
+.support-content__link-span{
+    color: #C2C8CC;
+}
+.support-content__link:focus ~ .support-content__link-span{
+    color: black;
+}
+
+
 .support-content__quote{
     border-left: solid 2px;
     border-color: #C2C8CC;

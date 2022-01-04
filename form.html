@@ -44,7 +44,7 @@
                                 <a class="navigation__link" href="#">Solitions</a>
                             </li>
                             <li class="navigation__item">
-                                <a class="navigation__link" href="#">Demo</a>
+                                <a class="navigation__link" href="demo.html">Demo</a>
                             </li>
                             <li class="navigation__item">
                                 <a class="navigation__link" href="#">Servises</a>
@@ -76,13 +76,14 @@
                                     <input class="form__input" type="date" id="date" name="date of birth" placeholder=" ">
                                     <label for="date" class="form__label">Дата Рождения</label>
                                 </div>
-                                <div class="form__group"> 
-                                    <label>Пол:                                
-                                        <input id="m" type="radio" type="checkbox" name="male">
-                                        <label for="m" class="form__label-chek">М</label>
-                                        <input id="g" type="radio" type="checkbox" name="female">
-                                        <label for="g" class="form__label-chek">Ж</label>
-                                    </label>
+                                <div class="form__group">
+                                    <p>Пол:</p>
+                                    <div>                                
+                                        <input id="m" type="radio" type="radio" name="pol" class="form__radio-m">
+                                        <label for="m" class="form__label-chek-m">М</label>
+                                        <input id="g" type="radio" type="radio" name="pol" class="form__radio-j">
+                                        <label for="g" class="form__label-chek-j">Ж</label>
+                                    </div>
                                 </div>
                             </div>
                         </fieldset>
@@ -104,23 +105,117 @@
                                 <div class="form__group">
                                     <div for="" class="form__label-sex" >
                                         <p class="form__text">Удобный интервал для связи:</p>
-                                        <div class="form__time-for">
-                                            <input type="checkbox" name="morning" id="mor">
-                                            <label class="form__label-chek" for="mor">Утро</label>
-                                            <input type="checkbox" name="afternoon" id="day">
-                                            <label class="form__label-chek" for="day">День</label>
-                                            <input type="checkbox" name="evening" id="even">
-                                            <label class="form__label-chek" for="even">Вечер</label>
-                                            <input type="checkbox" name="night" id="night">
-                                            <label class="form__label-chek" for="night">Ночь</label>
+                                        <div class="form__time-for time-for">
+                                            <input type="checkbox" name="morning" id="mor" class="time-for__mor">
+                                            <label class="form__label-chek-mor" for="mor">Утро</label>
+                                            <input type="checkbox" name="afternoon" id="day" class="time-for__day">
+                                            <label class="form__label-chek-day" for="day">День</label>
+                                            <input type="checkbox" name="evening" id="even" class="time-for__eve">
+                                            <label class="form__label-chek-eve" for="even">Вечер</label>
+                                            <input type="checkbox" name="night" id="night" class="time-for__night">
+                                            <label class="form__label-chek-night" for="night">Ночь</label>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </fieldset>
                     </div>        
-                    <input class="form__reset" type="reset">
+                    <input class="form__reset" type="reset" disabled>
                     <button class="form__button">Войти</button>
+                </form>
+            </section>
+            <section class="form2">
+                <form action="http://httpbin.org/post" method="post" class="form2-definition__wrapper">
+                    <dl class="form__definition definition">
+                        <dt class="definition__title">Псевдоклассы</dt>
+                        <dd class="definition__text">Псевдокласс - это селектор, который выбирает элементы, находящиеся в специфическом состоянии, например, они являются первым элементом своего типа, или на них наведён указатель мыши. Они обычно действуют так, как если бы вы применили класс к какой-то части вашего документа, что часто помогает сократить избыточные классы в разметке и даёт более гибкий, удобный в поддержке код</dd>
+                        <dt class="definition__title">Псевдоэлементы</dt>
+                        <dd class="definition__text">Псевдоэлементы ведут себя сходным образом, однако они действуют так, как если бы вы добавили в разметку целый новый HTML-элемент, а не применили класс к существующим элементам. Псевдоэлементы начинаются с двойного двоеточия : : .</dd>
+                    </dl>
+                    <div class="form2__checkbox">
+                        <fieldset class="form2__list-chekbox">
+                            <legend>Псевдоклассы</legend>
+                            <div class="form2__list-div">
+                                <input id="root" class="iteam-input" type="checkbox">
+                                <label for="root" class="iteam-label">:root</label>
+                            </div>
+                            <div class="form2__list-div">
+                                <input id="link" class="iteam-input" type="checkbox">
+                                <label for="link" class="iteam-label">:link</label>
+                            </div>
+                            <div class="form2__list-div">
+                                <input id="visited" class="iteam-input" type="checkbox" name=":visited" checked>
+                                <label for="visited" class="iteam-label">:visited</label>
+                            </div>
+                            <div class="form2__list-div">
+                                <input id="hover" class="iteam-input" type="checkbox" name="hover" checked>
+                                <label for="hover" class="iteam-label">:hover</label>
+                            </div>
+                            <div class="form2__list-div">
+                                <input id="active" class="iteam-input" type="checkbox" name="active" checked>
+                                <label for="active" class="iteam-label">:active</label>
+                            </div>
+                            <div class="form2__list-div">
+                                <input id="focus" class="iteam-input" type="checkbox" name="focus" checked>
+                                <label for="focus" class="iteam-label">:focus</label>
+                            </div>
+                            <div class="form2__list-div">
+                                <input id="first-child" class="iteam-input" type="checkbox" name="first-child">
+                                <label for="first-child" class="iteam-label">:first-child</label>
+                            </div>
+                            <div class="form2__list-div">
+                                <input id="first-of-type" class="iteam-input" type="checkbox" name="first-of-type">
+                                <label for="first-of-type" class="iteam-label">:first-of-type</label>
+                            </div>
+                            <div class="form2__list-div">
+                                <input id="checked" class="iteam-input" type="checkbox" name="checked" checked>
+                                <label for="checked" class="iteam-label">:checked</label>
+                            </div>
+                            <div class="form2__list-div">
+                                <input id="disabled" class="iteam-input" type="checkbox" name="disabled" checked>
+                                <label for="disabled" class="iteam-label">:disabled</label>
+                            </div>
+                            <div class="form2__list-div">
+                                <input id="enabled" class="iteam-input" type="checkbox" name="enabled" checked>
+                                <label for="enabled" class="iteam-label">:enabled</label>
+                            </div>
+                            <div class="form2__list-div">
+                                <input id="required" class="iteam-input" type="checkbox" name="required">
+                                <label for="required" class="iteam-label">:required</label>
+                            </div>
+                        </fieldset>
+                        <fieldset class="form2__list-chekbox">
+                            <legend>Псевдоэлементы</legend>
+                            <div class="form2__list-div">
+                                <input id="first-letter" class="iteam-input" type="checkbox" name="first-letter" checked>
+                                <label for="first-letter" class="iteam-label">::first-letter</label>
+                            </div>
+                            <div class="form2__list-div">
+                                <input id="first-line" class="iteam-input" type="checkbox" name="first-line">
+                                <label for="first-line" class="iteam-label">::first-line</label>
+                            </div>
+                            <div class="form2__list-div">
+                                <input id="selection" class="iteam-input" type="checkbox" name="selection" checked>
+                                <label for="selection" class="iteam-label">::selection</label>
+                            </div>
+                            <div class="form2__list-div">
+                                <input id="marker" class="iteam-input" type="checkbox" name="marker">
+                                <label for="marker" class="iteam-label">::marker</label>
+                            </div>
+                            <div class="form2__list-div">
+                                <input id="before" class="iteam-input" type="checkbox" name="before" checked>
+                                <label for="before" class="iteam-label">::before</label>
+                            </div>
+                            <div class="form2__list-div">
+                                <input id="after" class="iteam-input" type="checkbox" name="after" checked>
+                                <label for="after" class="iteam-label">::after</label>
+                            </div>
+                            <div class="form2__list-div">
+                                <input id="placeholder" class="iteam-input" type="checkbox" name="placeholder" checked>
+                                <label for="placeholder" class="iteam-label">::placeholder</label>
+                            </div>
+                        </fieldset>
+                    </div>
                 </form>
             </section>
         </main>   
@@ -134,7 +229,7 @@
                     <form class="footer__form2 form2">
                         <div class="form__group2">
                             <input type="email" class="form__input2">
-                            <label for="email" class="form__lable2">Enter your email</label>
+                            <label class="form__lable2">Enter your email</label>
                         </div>
                         <button type="submit" class="form__subscribe-button">Subscribe</button>
                     </form>

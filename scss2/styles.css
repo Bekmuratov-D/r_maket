@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* roboto-300 - latin */
 @font-face {
   font-family: "Roboto";
@@ -60,7 +61,6 @@ html {
   max-width: 1080px;
   width: 100%;
   margin: 0 auto;
-  font-family: "roboto", Verdana, Geneva, Tahoma, sans-serif;
   padding-bottom: 20px;
   border-bottom: 1px solid #C2C8CC;
 }
@@ -104,6 +104,19 @@ main {
   line-height: 1.5;
   text-decoration: none;
   color: #17494D;
+  transition: 0.2s;
+}
+.navigation__link:hover {
+  color: black;
+  background-color: #9dd4d8;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+.navigation__link:active {
+  color: #17494D;
+  background-color: #aee0e4;
+}
+.navigation__link:visited {
+  color: #48797c;
 }
 
 .navigation__item-buton {
@@ -118,7 +131,14 @@ main {
   text-decoration: none;
   color: #ffff;
   background-color: #17494D;
-  transition: opacity 0.3s;
+  transition: 0.3s;
+}
+.navigation__link-buton:hover {
+  background-color: rgba(0, 113, 240, 0.7);
+}
+.navigation__link-buton:focus {
+  padding: 8px 28px 10px 30px;
+  box-shadow: 0 4px 16px #C2C8CC;
 }
 
 .logo {
@@ -157,6 +177,19 @@ main {
   font-weight: 400;
   line-height: 1.5;
   justify-content: space-between;
+  transition: 0.2s;
+}
+.functions__link:hover {
+  color: black;
+  background-color: #9dd4d8;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+.functions__link:active {
+  color: #17494D;
+  background-color: #aee0e4;
+}
+.functions__link:visited {
+  color: #48797c;
 }
 
 .footer {
@@ -311,6 +344,7 @@ main {
   border: none;
   background-color: #17494D;
   transition: 0.3s;
+  cursor: pointer;
 }
 
 .form__subscribe-button:focus {
@@ -359,7 +393,6 @@ a#margin-big {
 }
 
 .form {
-  font-family: "roboto", Verdana, Geneva, Tahoma, sans-serif;
   display: flex;
   justify-content: center;
   padding: 50px 0 50px 0;
@@ -408,7 +441,7 @@ a#margin-big {
   left: 0;
   z-index: -1;
   color: #272626;
-  transition: 0.3px;
+  transition: 0.2s;
 }
 
 .form__span {
@@ -429,15 +462,38 @@ a#margin-big {
   border-bottom: 1px solid #1a73a8;
 }
 
-.form__label-sex {
-  width: 100%;
-  border-bottom: 1px solid #e0e0e0;
-  color: #222222;
-  display: block;
-}
-
 .form__label-chek {
   color: #373434;
+}
+
+.form__radio-m:checked ~ .form__label-chek-m {
+  background-color: #17494D;
+  color: white;
+}
+
+.form__radio-j:checked ~ .form__label-chek-j {
+  background-color: #17494D;
+  color: white;
+}
+
+.time-for__mor:checked ~ .form__label-chek-mor {
+  background-color: #17494D;
+  color: white;
+}
+
+.time-for__day:checked ~ .form__label-chek-day {
+  background-color: #17494D;
+  color: white;
+}
+
+.time-for__eve:checked ~ .form__label-chek-eve {
+  background-color: #17494D;
+  color: white;
+}
+
+.time-for__night:checked ~ .form__label-chek-night {
+  background-color: #17494D;
+  color: white;
 }
 
 .form__button {
@@ -452,17 +508,23 @@ a#margin-big {
 }
 
 .form__reset {
-  margin-right: 150px;
+  margin-top: 30px;
+  margin-right: 100px;
+  margin-left: 600px;
   border: none;
-  padding: 5px 10px;
-  background-color: red;
-  border-radius: 5px;
+  padding: 10px 10px;
+  border-radius: 7px;
 }
 
-.form__reset,
 .form__button:focus,
 .form__button:hover {
   background-color: rgba(0, 113, 240, 0.7);
+}
+
+.form__input:hover ~ .form__label {
+  font-size: 20px;
+  color: #11762a;
+  font-weight: bold;
 }
 
 .form__input:not(:-moz-placeholder-shown) ~ .form__label {
@@ -482,4 +544,60 @@ a#margin-big {
   top: -18px;
   font-size: 10px;
   color: #e0e0e0;
+}
+
+.form__reset:disabled {
+  background-color: #888383;
+  cursor: not-allowed;
+  pointer-events: none;
+  color: #dcd8d8;
+}
+
+.form2-definition__wrapper {
+  max-width: 1080px;
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1000px;
+}
+
+.form2__checkbox {
+  display: flex;
+}
+
+.form2__checkbox {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.definition__title {
+  margin-top: 30px;
+  color: #17494D;
+}
+
+.definition__title::first-letter {
+  font-size: 25px;
+  font-weight: bold;
+  color: #070101;
+}
+
+.definition__text {
+  color: #17494D;
+}
+
+.definition__text::before {
+  content: "🛈";
+}
+
+.form2__list-chekbox {
+  width: 300px;
+  padding: 20px;
+}
+
+.iteam-input:checked ~ .iteam-label {
+  text-decoration: line-through;
+}
+
+.form2__list-div:nth-child(even) {
+  background: #17494D;
+  color: white;
 }/*# sourceMappingURL=styles.css.map */

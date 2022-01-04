@@ -43,19 +43,34 @@
     text-decoration: none;
     border-bottom: solid 2px;
     border-color: #03363D;
-    margin: 8px 13px 8px 31px;
+    margin: 0 auto;
     font-size: 18px;
     font-weight: 700;
     line-height: 1.5;
     color: #03363D;
+    transition: 0.3s;
 }
 .chat-content__link-right{
     text-decoration: none;
     border-bottom: solid 2px;
     border-color: #03363D;
-    margin: 8px 180px 10px 0px;
+    margin: 0 auto;
     font-size: 18px;
     font-weight: 700;
     line-height: 1.5;
     color: #03363D;
+    transition: 0.3s;
+}
+
+.chat-content__link-left:hover{
+    font-size: 20px;
+}
+.chat-content__link-left:active{
+    font-size: 17px;
+}
+.chat-content__link-right:hover{
+    font-size: 20px;
+}
+.chat-content__link-right:active{
+    font-size: 17px;
 }

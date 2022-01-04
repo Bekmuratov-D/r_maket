@@ -46,7 +46,9 @@
     font-weight: 400;
     line-height: 1.5px;
     color: #03363D;
+    transition: 0.4s;
 }
+
 .main-feature__link-right {
     text-decoration: none;
     border-bottom: solid 2px;
@@ -57,4 +59,15 @@
     font-weight: 400;
     line-height: 1.5px;
     color: #03363D;
+    transition: 0.4s;
+}
+
+.main-feature__link:hover,
+.main-feature__link-right:hover{
+    border-bottom: solid 3px #000000;
+}
+
+.main-feature__link:active,
+.main-feature__link-right:active{
+    background-color: aqua;
 }

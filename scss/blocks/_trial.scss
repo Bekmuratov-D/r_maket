@@ -28,6 +28,17 @@
     font-weight: 900px;
     line-height: 1.38;
     margin: 8.41px 16px 7.59px 0;
+    text-decoration: none;
+    transition: 0.1s;
+    &:hover{
+        background-color: #36979e;
+    }
+    &:active{
+        background-color: #246b70;
+    }
+    &:visited{
+        color: bisque;
+    }
 }
 .trial__link{
     padding: 12px 24px 11px 24px;
@@ -35,4 +46,12 @@
     color: #17494D;
     border-color: #17494D;
     margin: 8.41px 8.48px 7.59px 0px;
-}
+    text-decoration: none;
+    transition: 0.1s;
+    &:hover{
+        background-color: #85c3c7;
+    }
+    &:active{
+        background-color: #aabdbf;
+    }
+}    

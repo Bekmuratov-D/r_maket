@@ -41,7 +41,7 @@
                             <a class="navigation__link" href="#">Solitions</a>
                         </li>
                         <li class="navigation__item">
-                            <a class="navigation__link" href="#">Demo</a>
+                            <a class="navigation__link" href="demo.html">Demo</a>
                         </li>
                         <li class="navigation__item">
                             <a class="navigation__link" href="#">Servises</a>
@@ -101,7 +101,7 @@
                     <div class="support__support-content support-content">
                         <h3 class="support-content__title">Give customers the best support</h3>
                         <p class="support-content__text">Customers want to connect any time, any place. Meet them where they are with the Zendesk Suite, which provides sophisticated, seamless support that flows across channels.</p>
-                        <a href="#" class="support-content__link">Learn more</a>  
+                        <a href="#" class="support-content__link">Learn more <span class="support-content__link-span">>>>></span></a>  
                         <div class="support-content__quote quote">
                             <img src="img/logo_support.svg" alt="icon" class="quote__icon">   
                             <p class="quote__text">“We’re here to help our customers succeed online, and that’s something we hear back from our customers. They just love our support channels.”</p>
@@ -127,30 +127,32 @@
         </section>
         <section class="others-about-us">
             <div class="others-about-us__wrapper">
-                <ul class="others-about-us__columns">
-                    <li class="others-about-us__others-about-us-column others-about-us-column">
+                <div class="others-about-us__columns">
+                    <div class="others-about-us__columns-face1">
                         <p class="others-about-us-column__title-left">CX TRENDS 2021</p>
                         <h3 class="others-about-us-column__text-bold-text-left">New world, new CX</h3>
+                    </div>
+                    <div class="others-about-us__columns-face2">    
                         <p class="others-about-us-column__text-left">Last year, customer needs changed in a blink. Learn how your team can keep up.</p>
                         <a href="URL" class="others-about-us-column__link-left">Read report</a>
-                    </li>
-                </ul>
-                <ul class="others-about-us__columns2">
+                    </div>
+                </div>
+                <div class="others-about-us__columns2">
                     <li class="others-about-us__others-about-us-column others-about-us-column">
                         <p class="others-about-us-column__title-middle">CX CHAMPIONS</p>
                         <h3 class="others-about-us-column__text-bold-text-middle">Speed + quality = agility</h3>
                         <p class="others-about-us-column__text-middle">How leading CX orgs support customer-centric processes and drive business agility.</p>
                         <a href="URL" class="others-about-us-column__link-middle">Read more</a>
                     </li>
-                </ul>
-                <ul class="others-about-us__columns3">
+                </div>
+                <div class="others-about-us__columns3">
                     <li class="others-about-us__others-about-us-column others-about-us-column">
                         <p class="others-about-us-column__title-right">NEW PRODUCT OFFERING</p>
                         <h3 class="others-about-us-column__text-bold-text-right">Introducing the Zendesk Suite</h3>
                         <p class="others-about-us-column__text-right">Our new all-in-one customer service solution is easy to use, convenient for customers, and scales with your business.</p>
                         <a href="URL" class="others-about-us-column__link-right">Learn more</a>
                     </li>
-                </ul> 
+                </div> 
             </div>    
         </section>    
         <section class="gartner">
@@ -226,8 +228,8 @@
             <div class="trial__wrapper">
                 <p class="trial__heading">Champions of awesome free trials</p>
                 <div class="trial__block">
-                    <a class="trial__link-bg">Start a free trial</a>
-                    <a class="trial__link">View demo</a>
+                    <a class="trial__link-bg" href="#">Start a free trial</a>
+                    <a class="trial__link"href="#">View demo</a>
                 </div> 
             </div>
         </section>        
@@ -404,7 +406,7 @@
                         <p class="subscribe__hiding">Enter the fold</p>
                         <p class="subscribe__text">Subscribe to our newsletter.</p>
                     </div>
-                    <form class="footer__form form">
+                    <form action="http://httpbin.org/post" method="post" class="footer__form form">
                         <div class="form__group">
                             <input type="email" class="form__input" placeholder=" " required>
                             <label class="form__lable">Enter your email</label>
