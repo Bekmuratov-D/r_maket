@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *,
+        ::before,
+        ::after{
+            box-sizing: border-box;
+        }
+        html{
+            height: 100%;
+        }
+        body{
+            height: 100%;
+            width: 100%;
+        }
+        h1{
+            width: 100%;
+            text-align: center;
+        }
+        span{
+            text-decoration: underline;
+        }
+
+        .wrapper {
+            width: 600px;
+            margin: 0 auto;
+        }
+        .slider-container{
+            overflow: hidden;
+            background-color: pink;
+        }
+        .slider-track{
+            display: flex;
+            background-color: yellow;
+            transform: .2s;
+        }
+        .slider-item{
+            height: 100px;
+        }
+        .slider-item:nth-child(3n+1){
+            background-color: red;
+        }
+        .slider-item:nth-child(3n+2){
+            background-color: green;
+        }
+        .slider-item:nth-child(3n+3){
+            background-color: blue;
+        }
+        .slidet-buttons{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1><span>Бекмуратов Дилмурат Бекмуратович</span>- Лабораторная работа №11</h1>
+    <div class="wrapper"> 
+        <div class="slider-container">
+            <div class="slider-track">
+                <div class="slider-item"></div>
+                <div class="slider-item"></div>
+                <div class="slider-item"></div>
+                <div class="slider-item"></div>
+                <div class="slider-item"></div>
+                <div class="slider-item"></div>
+                <div class="slider-item"></div>
+                <div class="slider-item"></div>
+                <div class="slider-item"></div>
+            </div>
+        </div>
+        <div class="slidet-buttons">
+            <button class="btn-prev">Prev</button>
+            <button class="btn-next">Next</button>
+        </div>
+    </div>
+</body>
+<script src="app.js"></script>
+</html>

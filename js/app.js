@@ -116,40 +116,54 @@ for (let i =0; i < 16; i++) {
 
 
 //Задача №8 Елка к новому году
-//console.log('Задача №8')
-//let hash = '#';
-//let hash2 = '*';
-//let line1 = " "
-//let line2 = " "
-//let height = 12;
-//for (let i = 0; i < height; i++){
-    //if(i % 2 == 0){
-       // console(line1 == line1 + hash2)
- //   } else{
- //     console.log(line2 == line2 + hash1)
- //   }
-//}
+console.log("Задача №8")
+console.log("*")
+console.log("##")
+console.log("***")
+console.log("####")
+console.log("*****")
+console.log("######")
+console.log("*******")
+console.log("########")
+console.log("*********")
+console.log('##########')
+
 
 //Задание № 9 Задача №9 Сортировка
-let n1 = 0;
-let n2 = -3;
-let n3 = 1;
+console.log("Задание № 9")
+let a = 0;
+let b = -3;
+let c = 1;
 
-if (n1 > n2 && n2 > n3){
-    console.log(n1, n2, n3)
+if(a < b && b < c) {
+   console.log(a, b , c);
+} else if (a < b && c < b) {
+    console.log(a, c, b);
+} else if (b < a && a < c) {
+    console.log(b, a, c);
+} else if(b < a && c < a) {
+    console.log(b, c, a); 
+} else if(c < a && a < b) {
+    console.log(c, a, b);
+} else {
+    console.log(c, b , a);
 }
-if (n1 > n2 && n2 < n3 && n1 > n3){
-    console.log(n1, n3, n2)
-}
-if (n2 > n1 && n1 > n3){
-    console.log(n2, n1, n3)
-}
-if (n2 > n1 && n1 < n3 && n2 > n3){
-    console.log(n2, n3, n1)
-}
-if (n3 > n1 && n1 > n2){
-    console.log(n3, n1, n2)
-}
-if (n3 > n1 && n1 < n2 && n3 > n2){
-    console.log(n3, n2, n1)
+
+// Задача №10 Максимальное значение
+console.log("Задача №10")
+let a2 = 2;
+let b2 = -1;
+let c2 = 0;
+let d2 = -5;
+let f2 = -4;
+if (a2 > b2 && a2 > b2 && a2 > d2 && a2 > f2){
+    console.log('<',a2)
+} else if ( b2 > a2 && b2 > c2 && b2 > d2 && b2 > f2){
+    console.log('<',b2)
+} else if (c2 > a2 && c2 > b2 && c2 > d2 && c2 > f2){
+    console.log('<',c2)
+} else if (d2 > a2 && d2 > b2 && d2 > c2 && d2 > f2){
+    console.log('<',d2)
+} else{
+    console.log('<',f2)
 }
