@@ -60,27 +60,30 @@ console.log('Фактический:', typeof(99 * "шары"))
 
 //Задача №2 Прямоугольник
 console.log("Задача №2")
-let with1 = 2, length = 3;
-console.log(with1, length)
-console.log("Периметр:", with1 + with1 + length + length)
-console.log("Площадь:", with1 * length)
-console.log('Периметр/Площадь:', (with1 + with1 + length + length)/(with1 * length))
+let width1 = 2, length = 3;
+let perimeter = width1*2 + length*2, area = width1*length;
+let perimeterArea = perimeter / area ;
+console.log(perimeter)
+console.log(area)
+console.log(perimeterArea)
 
 //Задача №3 Конвертация единиц измерения
+//В первой вместо дата поставить существующие типы данных, третья - обозначение градуса с C и F, елка должна генерироваться через код
+
 console.log("Задача №3")
 let celsius = 25;
 let fahrenheit = 69.2;
 let convertToFahrenheit = celsius * 1.8 + 32 ;
 let convertToCelsius = (fahrenheit - 32) / 1.8 ;
 
-console.log(celsius, "соответствует", convertToFahrenheit )
-console.log(fahrenheit, "соответствует", convertToCelsius )
+console.log(`${celsius} соответствует ${convertToFahrenheit}`)
+console.log(`${fahrenheit} соответствует ${convertToCelsius}`)
 
 //Задача №4 Високосный год
-console.log('Задача №4')
+console.log('Задача №4');
 let year = prompt('Задание №4 Year:');
 
-alert(year % 4 == 0 && year % 100 != 0 ? "true" : "false")
+// alert(year % 4 == 0 && year % 100 != 0 ? "true" : "false")
 
 //Задание №5 Проверка
 console.log('Задание №5')
@@ -88,21 +91,21 @@ let num1 = 9;
 let num2 = 10;
 
 // &&-and; || - or; ! - не
-if (num1 == 10 || num2 == 10 || num1 + num2 == 10) {
-      console.log(true)
-} else{
-    console.log(false)
-}
+//if (num1 == 10 || num2 == 10 || num1 + num2 == 10) {
+//      console.log(true)
+//} else{
+//    console.log(false)
+//}
 
 
 // Задача №6 Считаем овец
 console.log('Задача №6')
 let numSheep = prompt('numSheep');
 let i = 0;
-while (i < numSheep){
-    alert((i+1) + 'овечка...')
-    i++
-}
+//while (i < numSheep){
+//    alert((i+1) + 'овечка...')
+ //   i++
+//}
 
 //Задача №7 Четное-нечетное
 console.log('Задача №7')
@@ -117,16 +120,15 @@ for (let i =0; i < 16; i++) {
 
 //Задача №8 Елка к новому году
 console.log("Задача №8")
-console.log("*")
-console.log("##")
-console.log("***")
-console.log("####")
-console.log("*****")
-console.log("######")
-console.log("*******")
-console.log("########")
-console.log("*********")
-console.log('##########')
+let p = 1;
+while (p < 6) {
+    let i = 0;
+    while(i < p) {
+        console.log('*')
+        i++
+    }
+    p++
+}
 
 
 //Задание № 9 Задача №9 Сортировка

@@ -1,6 +1,5 @@
-@use "../utils2/mixins";
-@use "../utils2/variables";
-
+@use "../utils/mixins";
+@use "../utils/variables";
 
 .form2-definition__wrapper{
     @include mixins.wrapper;

@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="scss2/styles.css">
+    <link rel="stylesheet" href="scss/styles.css">
 </head>
 <body>
     <div class="page">
@@ -73,15 +73,15 @@
                                     <label for="name" class="form__label">ФИО <span class="form__span">*</span></label>
                                 </div>
                                 <div class="form__group">
-                                    <input class="form__input" type="date" id="date" name="date of birth" placeholder=" ">
+                                    <input class="form__input" type="date" id="date" name="date of birth">
                                     <label for="date" class="form__label">Дата Рождения</label>
                                 </div>
                                 <div class="form__group">
                                     <p>Пол:</p>
                                     <div>                                
-                                        <input id="m" type="radio" type="radio" name="pol" class="form__radio-m">
+                                        <input id="m" type="radio" name="pol" class="form__radio-m">
                                         <label for="m" class="form__label-chek-m">М</label>
-                                        <input id="g" type="radio" type="radio" name="pol" class="form__radio-j">
+                                        <input id="g" type="radio" name="pol" class="form__radio-j">
                                         <label for="g" class="form__label-chek-j">Ж</label>
                                     </div>
                                 </div>
@@ -103,16 +103,16 @@
                                     <label class="form__label" for="tel">телефон <span class="form__span">*</span></label>
                                 </div>
                                 <div class="form__group">
-                                    <div for="" class="form__label-sex" >
+                                    <div class="form__label-sex" >
                                         <p class="form__text">Удобный интервал для связи:</p>
                                         <div class="form__time-for time-for">
-                                            <input type="checkbox" name="morning" id="mor" class="time-for__mor">
+                                            <input type="checkbox" name="time" id="mor" class="time-for__mor">
                                             <label class="form__label-chek-mor" for="mor">Утро</label>
-                                            <input type="checkbox" name="afternoon" id="day" class="time-for__day">
+                                            <input type="checkbox" name="time" id="day" class="time-for__day">
                                             <label class="form__label-chek-day" for="day">День</label>
-                                            <input type="checkbox" name="evening" id="even" class="time-for__eve">
+                                            <input type="checkbox" name="time" id="even" class="time-for__eve">
                                             <label class="form__label-chek-eve" for="even">Вечер</label>
-                                            <input type="checkbox" name="night" id="night" class="time-for__night">
+                                            <input type="checkbox" name="time" id="night" class="time-for__night">
                                             <label class="form__label-chek-night" for="night">Ночь</label>
                                         </div>
                                     </div>
@@ -120,12 +120,13 @@
                             </div>
                         </fieldset>
                     </div>        
-                    <input class="form__reset" type="reset" disabled>
+                    <input class="form__reset" value="Сбросит" type="reset" disabled>
                     <button class="form__button">Войти</button>
                 </form>
             </section>
             <section class="form2">
                 <form action="http://httpbin.org/post" method="post" class="form2-definition__wrapper">
+                    <h2 class="form2__title">Псевдоклассы и Псевдоэлементы</h2>
                     <dl class="form__definition definition">
                         <dt class="definition__title">Псевдоклассы</dt>
                         <dd class="definition__text">Псевдокласс - это селектор, который выбирает элементы, находящиеся в специфическом состоянии, например, они являются первым элементом своего типа, или на них наведён указатель мыши. Они обычно действуют так, как если бы вы применили класс к какой-то части вашего документа, что часто помогает сократить избыточные классы в разметке и даёт более гибкий, удобный в поддержке код</dd>
@@ -226,10 +227,10 @@
                         <p class="subscribe__hiding">Enter the fold</p>
                         <p class="subscribe__text">Subscribe to our newsletter.</p>
                     </div>
-                    <form class="footer__form2 form2">
-                        <div class="form__group2">
-                            <input type="email" class="form__input2">
-                            <label class="form__lable2">Enter your email</label>
+                    <form action="http://httpbin.org/post" method="post" class="footer__form1 form1">
+                        <div class="form__group1">
+                            <input type="email" class="form__input1" placeholder=" " required>
+                            <label class="form__lable1">Enter your email</label>
                         </div>
                         <button type="submit" class="form__subscribe-button">Subscribe</button>
                     </form>

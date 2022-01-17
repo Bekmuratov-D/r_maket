@@ -17,9 +17,22 @@ p::selection{
 h3::selection{
     background-color: rgb(139, 228, 36);
 }
+h1::selection{
+    background-color: rgb(139, 228, 36);
+}
 h2::selection{
     background-color: rgb(255, 242, 56);
 }
 a::selection{
     background-color: rgb(79, 255, 182);    
+}
+input::selection{ background-color: aquamarine;}
+dd::selection{
+    background-color: yellow;
+}
+dt::selection{
+    background-color: yellowgreen;
+}
+input:required{
+    border-bottom: solid 2px rgb(237, 16, 8);
 }

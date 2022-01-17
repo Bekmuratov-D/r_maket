@@ -1,5 +1,5 @@
-@use "../utils2/mixins";
-@use "../utils2/variables";
+@use "../utils/mixins";
+@use "../utils/variables";
 
 .form {
     display: flex;
@@ -52,11 +52,12 @@
     width: 100%;
     padding: 0 0 10px 0;
     border: none;
-    border-bottom: 1px solid #e0e0e0;
+    border-bottom: 1px solid #a79f9f;
     background-color: transparent;
     outline: none;
     transition: 0.3s;
 }
+
 .form__input:focus {
     border-bottom: 1px solid #1a73a8;
 }
