@@ -10,11 +10,11 @@
 }
 
 .shapes__linear-gradient{
-    border: solid 2px #000;
+    border: solid 2px rgb(199, 191, 191);
     margin-right: 20px;
-    width: 100px;
-    height: 100px;
-    background-image: linear-gradient(rgb(111, 197, 68), rgb(10, 22, 116));
+    width: 200px;
+    height: 200px;
+    background-image: linear-gradient(rgb(255, 154, 154), rgb(5, 255, 209));
 }
 
 .shapes__radial-gradient {
@@ -53,25 +53,29 @@
     animation-iteration-count: infinite;
     animation-duration: 3s;
     animation-direction: alternate;
+
 }
 .shapes__2d-example2{
     position: relative;
     width: 100px;
     height: 100px;
-    background-color: #185e1b;
+    background-color: #c73333;
     animation-name: shapes-to;
     animation-duration: 5s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
-    border-radius: 25px;
 }
 @keyframes shapes-to {
-    from {
+    0%{
       width: 100px;
       height: 100px;
       background-color: #F498AD;
     }
-    to {
+    50% {
+        width: 200px;
+        height: 100px;
+    }
+    100% {
       width: 50px;
       height: 50px;
       background-color: #2E9AFF;
@@ -80,6 +84,9 @@
 @keyframes shape-rotation{
     0% {
         transform:rotate(0deg);
+    }
+    50%{
+        width: 200px;
     }
     100% {
         transform:rotate(360deg);
@@ -117,14 +124,18 @@
 }
 
 @keyframes shapes1-3d {
+    0% {
+        transform: rotate();
+    }
     100% {
-    transform: rotateY(360deg);
+    transform: rotateX(360deg);
     }
 }
 
 @keyframes shapes2-3d {
     100% {
     transform: scale3d(0,0,5);
+    transform: rotateY(360deg);
     }
 }
 
@@ -159,4 +170,5 @@
     width: 50px;
     background-color: rgb(13, 39, 39);
     box-shadow: 0.4em 0.4em 5px rgba(122,122,122,0.5);
+    border-radius: 0;
 }

@@ -1,60 +1,54 @@
 
-let type = "Data";
-
 console.log("Салат")
-console.log('Предположение:', type)
+console.log('Предположение:'+"string")
 console.log('Фактический:', typeof("Салат"))
 
 console.log(9)
-console.log('Предположение:', type)
+console.log('Предположение:', 'number')
 console.log('Фактический:', typeof(9))
 
 console.log(1.2)
-console.log('Предположение:', type)
+console.log('Предположение:', 'number')
 console.log('Фактический:', typeof(1.2))
 
 console.log(NaN)
-console.log('Предположение:', type)
+console.log('Предположение:', 'number')
 console.log('Фактический:', typeof(NaN))
 
 console.log("Hello World")
-console.log('Предположение:', type)
+console.log('Предположение:', 'string')
 console.log('Фактический:', typeof("Hello World"))
 
 console.log(true)
-console.log('Предположение:', type)
+console.log('Предположение:', 'boolean')
 console.log('Фактический:', typeof(true))
 
 console.log(2 != 1)
-console.log('Предположение:', type)
+console.log('Предположение:', 'boolean')
 console.log('Фактический:', typeof(2 != 1))
 
 console.log("сыр" + "ы")
-console.log('Предположение:', type)
+console.log('Предположение:', ' string')
 console.log('Фактический:', typeof("сыр" + "ы"))
 
-console.log("сыр" - "ы")
-console.log('Предположение:', type)
-console.log('Фактический:', typeof("сыр" - "ы"))
-
 console.log("2" + "4")
-console.log('Предположение:', type)
+console.log('Предположение:', 'string')
 console.log('Фактический:', typeof("2" + "4"))
 
 console.log("2" - "4")
-console.log('Предположение:', type)
+console.log('Предположение:', 'number')
 console.log('Фактический:', typeof("2" - "4"))
 
 console.log("Сэм" + 5)
-console.log('Предположение:', type)
+console.log('Предположение:', 'string')
 console.log('Фактический:', typeof("Сэм" + 5))
 
 console.log("Сэм" - 5)
-console.log('Предположение:', type)
+console.log('Предположение:', 'number')
 console.log('Фактический:', typeof("Сэм" - 5))
 
 console.log(99 * "шары")
-console.log('Предположение:', type)
+console.log('Предположение:', 'number')
 console.log('Фактический:', typeof(99 * "шары"))
 
 
@@ -76,12 +70,12 @@ let fahrenheit = 69.2;
 let convertToFahrenheit = celsius * 1.8 + 32 ;
 let convertToCelsius = (fahrenheit - 32) / 1.8 ;
 
-console.log(`${celsius} соответствует ${convertToFahrenheit}`)
-console.log(`${fahrenheit} соответствует ${convertToCelsius}`)
+console.log(`${celsius}°C соответствует ${convertToFahrenheit}F`)
+console.log(`${fahrenheit}F соответствует ${convertToCelsius}°C`)
 
 //Задача №4 Високосный год
 console.log('Задача №4');
-let year = prompt('Задание №4 Year:');
+//let year = prompt('Задание №4 Year:');
 
 // alert(year % 4 == 0 && year % 100 != 0 ? "true" : "false")
 
@@ -100,8 +94,8 @@ let num2 = 10;
 
 // Задача №6 Считаем овец
 console.log('Задача №6')
-let numSheep = prompt('numSheep');
-let i = 0;
+//let numSheep = prompt('numSheep');
+//let i = 0;
 //while (i < numSheep){
 //    alert((i+1) + 'овечка...')
  //   i++
@@ -120,16 +114,21 @@ for (let i =0; i < 16; i++) {
 
 //Задача №8 Елка к новому году
 console.log("Задача №8")
-let p = 1;
-while (p < 6) {
-    let i = 0;
-    while(i < p) {
-        console.log('*')
-        i++
-    }
-    p++
-}
 
+function tree(line){
+    let str2 = '';
+    let str1 = '';
+    for(let i = 1; i <= line; i++){
+        if (i % 2 === 0){
+            str2 = str2 + '#'
+            console.log(str2);
+        } else {
+           str1 = str1 + '*';
+           console.log(str1);
+        }
+    }
+}
+tree(12);
 
 //Задание № 9 Задача №9 Сортировка
 console.log("Задание № 9")

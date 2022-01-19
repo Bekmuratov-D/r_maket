@@ -1,6 +1,7 @@
 @use "../utils/mixins";
 @use "../utils/variables";
 
+
 .form2-definition__wrapper{
     @include mixins.wrapper;
     max-width: 1000px;
@@ -8,7 +9,14 @@
 .form2__checkbox{
     display: flex;
 }
-
+.page {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+main{
+    flex: 1 1 auto;
+}
 .form2__checkbox{
     margin-top: 30px;
     margin-bottom: 30px;
@@ -44,4 +52,7 @@
 .form2__list-div:nth-child(even) { 
     background: #17494D; 
     color: white;
+}
+.form__input1:focus ~ ::placeholder {
+
 }

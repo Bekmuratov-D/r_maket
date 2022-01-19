@@ -120,19 +120,19 @@
                             </div>
                         </fieldset>
                     </div>        
-                    <input class="form__reset" value="Сбросит" type="reset" disabled>
+                    <input class="form__reset" value="Сбросить" type="reset" disabled>
                     <button class="form__button">Войти</button>
                 </form>
             </section>
             <section class="form2">
-                <form action="http://httpbin.org/post" method="post" class="form2-definition__wrapper">
+                <form action="http://httpbin.org/post" method="post" class="form2-definition__wrapper" name="">
                     <h2 class="form2__title">Псевдоклассы и Псевдоэлементы</h2>
                     <dl class="form__definition definition">
                         <dt class="definition__title">Псевдоклассы</dt>
                         <dd class="definition__text">Псевдокласс - это селектор, который выбирает элементы, находящиеся в специфическом состоянии, например, они являются первым элементом своего типа, или на них наведён указатель мыши. Они обычно действуют так, как если бы вы применили класс к какой-то части вашего документа, что часто помогает сократить избыточные классы в разметке и даёт более гибкий, удобный в поддержке код</dd>
                         <dt class="definition__title">Псевдоэлементы</dt>
                         <dd class="definition__text">Псевдоэлементы ведут себя сходным образом, однако они действуют так, как если бы вы добавили в разметку целый новый HTML-элемент, а не применили класс к существующим элементам. Псевдоэлементы начинаются с двойного двоеточия : : .</dd>
-                    </dl>
+                    </dl>   
                     <div class="form2__checkbox">
                         <fieldset class="form2__list-chekbox">
                             <legend>Псевдоклассы</legend>
@@ -181,7 +181,7 @@
                                 <label for="enabled" class="iteam-label">:enabled</label>
                             </div>
                             <div class="form2__list-div">
-                                <input id="required" class="iteam-input" type="checkbox" name="required">
+                                <input id="required" class="iteam-input" type="checkbox" name="required" checked>
                                 <label for="required" class="iteam-label">:required</label>
                             </div>
                         </fieldset>
@@ -229,8 +229,8 @@
                     </div>
                     <form action="http://httpbin.org/post" method="post" class="footer__form1 form1">
                         <div class="form__group1">
-                            <input type="email" class="form__input1" placeholder=" " required>
-                            <label class="form__lable1">Enter your email</label>
+                            <input type="email" class="form__input1" placeholder="Enter your email1" required>
+                            <label class="form__lable1"></label>
                         </div>
                         <button type="submit" class="form__subscribe-button">Subscribe</button>
                     </form>

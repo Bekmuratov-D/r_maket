@@ -58,55 +58,53 @@ let student = {
     "last name": "Бекмуратов",
     "first name": "Дилмуратов",
 };
-console.log('Студент ' + student["first name"] + student["last name"] + ' учится в ' + student.group + ' группе');
-
+console.log(`Список свойств: ${Object.keys(student)} .`)
+console.log(`Студент ${student["first name"]} ${student["last name"]} учится в ${student.group} группе`);
 
 
  // Задача №5 Переключение элементов
+let dots = document.getElementsByClassName('dots-item'),
+    dotsArea = document.getElementsByClassName('dots-block')[0],
+    slides = document.getElementsByClassName('slides-item'),
+    prevBtn = document.getElementById('left-button'),
+    nextBtn = document.getElementById('right-button'),
+    slideIndex = 1;
 
-let position = 0;
-const slidesToShow = 4;
-const sliderToScroll = 1;
-const container = document.querySelector('.slider-container');
-const track = document.querySelector('.slider-track');
-// const item = document.querySelector('.slider-item');
-const btnPrev = document.querySelector('.btn-prev');
-const btnNext = document.querySelector('.btn-next');
-const itemsCount = item.length;
-const items = document.querySelectorAll('.slider-item');
-const itemWidth = items / slidesToShow;
-const movePosition = sliderToScroll * itemWidth;
+showSlides(slideIndex)
 
-
-items.forEach((item) => {
-    item.style.minWidth = `${itemWidth}px`;
-});
-
-btnNext.addEventListener('click', () => {
-    const itemsLeft = itemsCount - (Math.abs(position) + slidesToShow * itemWidth) / itemWidth;
-    position -= itemsLeft >= sliderToScroll ? movePosition : itemsLeft * itemWidth;
-
-    setPosition();
-    checkBtns();
-});
-
-btnPrev.addEventListener('click', () => {
-    const itemsLeft = Math.abs(position) / itemWidth ;
-    position += itemsLeft >= sliderToScroll ? movePosition : itemsLeft * itemWidth;
-
-    setPosition();
-    checkBtns();
-});
-
-const setPosition = () => {
-    track.style.transform = `translateX(${position}px)`;
+function showSlides (n) {
+    if (n < 1) {
+        slideIndex = slides.length;
+    } else if  (n > slides.length) {
+        slideIndex = 1;
+    }
+    for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = 'none';
+    }
+    for (let i = 0; i < dots.length; i++) {
+        dots[i].classList.remove('active');
+    }
+    slides[slideIndex - 1].style.display = 'block';
+    dots[slideIndex - 1].classList.add('active'); 
 }
 
-const checkBtns = () => {
-    btnPrev.disabled = position === 0;
-    btnNext.disabled = position <= -(itemsCount - slidesToShow) * itemWidth;
-};
-checkBtns();
-
- 
+function plusSlides(n) {
+    showSlides(slideIndex += n);
+}
+function currentSlide (n) {
+    showSlides(slideIndex = n);
+}
+prevBtn.onclick = function(){
+    plusSlides(-1);
+}
+nextBtn.onclick = function(){
+    plusSlides(1);
+}
+dotsArea.onclick = function(e) {
+    for (let i = 0; i < dots.length + 1; i++) {
+        if (e.target.classList.contains('dots-item') && e.target == dots[i -1]) {
+            currentSlide(i);
+        }
+    }
+}
 
