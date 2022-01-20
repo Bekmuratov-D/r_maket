@@ -68,10 +68,10 @@ let dots = document.getElementsByClassName('dots-item'),
     slides = document.getElementsByClassName('slides-item'),
     prevBtn = document.getElementById('left-button'),
     nextBtn = document.getElementById('right-button'),
-    slideIndex = 1;
+    slideIndex = 3;
 
 showSlides(slideIndex)
-
+// C начало напишем функцию которая будуть показывать слайды это функция будеть принимать значение 
 function showSlides (n) {
     if (n < 1) {
         slideIndex = slides.length;

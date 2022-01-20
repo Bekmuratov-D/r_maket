@@ -165,6 +165,7 @@
     border-radius: 25px;
     border: solid 1px black;
     transition: 0.5s;
+    transition-property: inherit;
 }
 .shapes__t-example2:hover{
     width: 50px;
