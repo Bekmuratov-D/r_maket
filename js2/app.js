@@ -78,18 +78,18 @@ function showSlides (n) {
     } else if  (n > slides.length) {
         slideIndex = 1;
     }
-    for (let i = 0; i < slides.length; i++) {
+    for (let i = 0; i < slides.length; i++) {  // скрываем картинки
         slides[i].style.display = 'none';
     }
     for (let i = 0; i < dots.length; i++) {
         dots[i].classList.remove('active');
     }
-    slides[slideIndex - 1].style.display = 'block';
+    slides[slideIndex - 1].style.display = 'block'; // привязка точек с слайдами
     dots[slideIndex - 1].classList.add('active'); 
 }
 
 function plusSlides(n) {
-    showSlides(slideIndex += n);
+    showSlides(slideIndex += n); // листает слайды
 }
 function currentSlide (n) {
     showSlides(slideIndex = n);
